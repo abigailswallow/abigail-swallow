@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<div class="flex w-auto justify-center">
+    {{ range .Site.Taxonomies.tags }}
+    <button class=" bg-indigo-500 hover:bg-cyan-600 rounded-full px-1 mx-2"><a href="{{ .Page.Permalink }}">{{
+            .Page.Title
+            }}</a> <sup>{{ .Count }}</sup></button>
+    {{ end }}
+</div>
+
+{{ .Content }}
+
+{{ end }}
