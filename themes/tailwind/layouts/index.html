@@ -1,12 +1,15 @@
 {{ define "main" }}
 
-<div class="flex w-auto justify-center">
+{{/* <div class="flex w-auto justify-center">
     {{ range .Site.Taxonomies.tags }}
-    <button class=" bg-zinc-300 hover:bg-indigo-200 text-zinc-600 hover:text-white text-sm rounded-full px-2.5 py-1 mx-2"><a href="{{ .Page.Permalink }}">{{
+    <button
+        class=" bg-zinc-300 hover:bg-indigo-200 text-zinc-600 hover:text-white text-sm rounded-full px-2.5 py-1 mx-2"><a
+            href="{{ .Page.Permalink }}">{{
             .Page.Title
-            }}</a><sup>  {{ .Count }}</sup></button>
+            }}</a><sup> {{ .Count }}</sup></button>
     {{ end }}
-</div>
+</div> */}}
+
 
 {{- partial "grid.html" . -}}
 

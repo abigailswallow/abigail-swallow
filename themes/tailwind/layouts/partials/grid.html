@@ -1,20 +1,73 @@
+<div id="tag-buttons" class="flex justify-center text-sm">
+    <button class=" bg-blue-500 text-white mx-1 px-3 py-1 rounded-full ">All</button>
+    {{ range .Site.Taxonomies.tags }}
+    <button class="bg-gray-200 text-gray-700 mx-1 px-3 py-1 rounded-full">{{ .Page.Title }}</button>
+    {{ end }}
+</div>
+
+
+
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice "featured") }}
-    <div class="p-4">
+    {{ range .Site.RegularPages }}
+    <div class="p-4 post {{ range .Params.tags }}{{ . }} {{ end }}">
         <a href="{{ .RelPermalink }}">
             <div class="w-full h-0 aspect-w-4 aspect-h-3">
                 <img src="{{ .Params.previewImage }}" alt="{{ .Title }}" class="object-cover mb-2 rounded-lg">
-              </div>
+            </div>
             <h2 class="text-lg font-semibold mb-2">{{ .Title }}</h2>
         </a>
         <p class="text-gray-600 mb-4">{{ .Description }}</p>
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap tags">
             {{ range .Params.tags }}
-            <a href="/tags/{{ . | urlize }}">
-                <span class="text-sm text-gray-500 bg-gray-200 px-2 py-1 rounded-full mr-2 mb-2">{{ . }}</span>
+            <a href="#" data-tag="{{ . }}" class="tag-link">
+                <span class="text-sm mr-2 mb-2 underline">{{ . }}</span>
             </a>
             {{ end }}
         </div>
     </div>
     {{ end }}
 </div>
+
+<script>
+    // Wait for the page to load
+    window.addEventListener("DOMContentLoaded", function () {
+        // Get all the buttons and posts
+        const buttons = document.querySelectorAll("#tag-buttons button");
+        const posts = document.querySelectorAll(".post");
+
+        // Add click event listener to each button
+        buttons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                // Remove 'active' class from all buttons
+                buttons.forEach(function (btn) {
+                    btn.classList.remove("bg-blue-500", "text-white");
+                    btn.classList.add("bg-gray-200", "text-gray-700");
+                });
+
+                // Add 'active' class to the clicked button
+                button.classList.remove("bg-gray-200", "text-gray-700");
+                button.classList.add("bg-blue-500", "text-white");
+
+                if (button.textContent === "All") {
+                    // Show all posts if 'All' button is clicked
+                    posts.forEach(function (post) {
+                        post.style.display = "block";
+                    });
+                } else {
+                    const tag = button.textContent.trim();
+
+                    // Hide all posts
+                    posts.forEach(function (post) {
+                        post.style.display = "none";
+                    });
+
+                    // Show only posts with the selected tag
+                    const filteredPosts = document.querySelectorAll("." + tag);
+                    filteredPosts.forEach(function (post) {
+                        post.style.display = "block";
+                    });
+                }
+            });
+        });
+    });
+</script>
