@@ -2,5 +2,10 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Abigail Swallow'
 theme = "tailwind"
+copyright = "2022-{year} Abigail Swallow. All rights reserved."
 
 pluralizeListTitles = false
+
+[markup.goldmark.renderer]
+unsafe= true
+

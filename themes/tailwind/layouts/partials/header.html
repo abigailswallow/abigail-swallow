@@ -1,13 +1,11 @@
 <header>
-    <nav class="flex items-center justify-between p-4">
-        <a href="/" class="font-semibold">{{ .Site.Title }}</a>
-        <div>
-            {{ $selectedSections := slice "Play" "Work" }}
-            {{ range .Site.Sections }}
-              {{ if in $selectedSections .Title }}
-                <a href="{{ .RelPermalink }}" class="mr-4">{{ .Title }}</a>
-              {{ end }}
-            {{ end }}
-          </div>
-    </nav>
+  <nav class="flex items-center justify-between p-4 text-md">
+    <a href="/" class="font-semibold">{{ .Site.Title }}</a>
+
+    <div>
+      <a href="/about" class="ml-4 underline decoration-4">About</a>
+      <a href="/work" class="ml-4 underline decoration-4">Work</a>
+      <a href="/playground" class="ml-4 underline decoration-4">Playground</a>
+    </div>
+  </nav>
 </header>

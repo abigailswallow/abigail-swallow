@@ -12,13 +12,13 @@
 /* put site specific css styles here using the @layer directive */
 /* see https://tailwindcss.com/docs/functions-and-directives#layer */
 @layer components {
-    .welcome-headline {
-        @apply text-sky-600;
-    }
+  .welcome-headline {
+    @apply text-sky-600;
+  }
 }
 
 @layer base {
-    html {
-      font-family: 'Inter', system-ui, sans-serif;
-    }
+  html {
+    font-family: "pragmatica", sans-serif;
   }
+}

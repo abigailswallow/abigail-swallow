@@ -1,9 +1,31 @@
 {{ define "main" }}
-{{ range .Pages }}
-<article
+
+
+{{/*  <article
     class="justify-self-center mx-auto mb-16 px-6 sm:px-4 md:px-0 prose dark:prose-invert prose-zinc lg:prose-lg hover:prose-a:text-sky-500">
     <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
     {{ .Content }}
-</article>
-{{ end }}
+</article>  */}}
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    {{ range .Pages }}
+    <div class="p-4 post {{ range .Params.tags }}{{ . }} {{ end }}">
+        <a href="{{ .RelPermalink }}">
+            <div class="w-full h-0 aspect-w-4 aspect-h-3">
+                <img src="{{ .Params.previewImage }}" alt="{{ .Title }}" class="object-cover mb-2 rounded-lg">
+            </div>
+            <h2 class="text-lg font-semibold mb-2">{{ .Title }}</h2>
+        </a>
+        <p class="text-gray-600 mb-4">{{ .Description }}</p>
+        <div class="flex flex-wrap tags">
+            {{ range .Params.tags }}
+            <a href="/tags/{{ . | urlize }}" data-tag="{{ . }}" class="tag-link">
+                <span class="text-sm mr-2 mb-2 underline">{{ . }}</span>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</div>
+
 {{ end }}

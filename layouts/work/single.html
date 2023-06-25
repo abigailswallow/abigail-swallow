@@ -1,0 +1,65 @@
+{{ define "main" }}
+<main
+    class="justify-self-center mx-auto px-6 mb-16 sm:px-4 md:px-0 prose dark:prose-invert prose-slate lg:prose-lg hover:prose-a:text-sky-500">
+
+    <div class="description">
+        <h1 class="">{{ .Title }}</h1>
+        <p>{{ .Params.description }}</p>
+
+        <p>{{ .Params.projectYear }} |
+            {{ range $index, $tag := .Params.tags }}
+            {{ if $index }},{{ end }}
+            {{ $tag }}
+            {{ end }}
+        </p>
+
+        <p>{{ .Params.projectSummary }} </p>
+    </div>
+
+    <div class="flex items-center justify-center mt-20 mb-10" id="content-buttons">
+        <button class="px-3 mx-1 rounded-md bg-blue-500" id="results-button">Results</button>
+        <button class="px-3 mx-1 rounded-md bg-zinc-300 " id="process-button">Process</button>
+    </div>
+
+    {{ .Content }}
+
+</main>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const resultsButton = document.getElementById("results-button");
+        const processButton = document.getElementById("process-button");
+        const resultsDiv = document.getElementById("results");
+        const processDiv = document.getElementById("process");
+
+        // Show the "Results" div and hide the "Process" div by default
+        resultsDiv.style.display = "block";
+        processDiv.style.display = "none";
+
+        // Add event listener for the "Results" button
+        resultsButton.addEventListener("click", function () {
+            resultsDiv.style.display = "block";
+            processDiv.style.display = "none";
+            resultsButton.classList.remove("bg-zinc-300");
+            resultsButton.classList.add("bg-blue-500");
+            processButton.classList.remove("bg-blue-500");
+            processButton.classList.add("bg-zinc-300");
+        });
+
+        // Add event listener for the "Process" button
+        processButton.addEventListener("click", function () {
+            resultsDiv.style.display = "none";
+            processDiv.style.display = "block";
+            processButton.classList.remove("bg-zinc-300")
+            processButton.classList.add("bg-blue-500");
+            resultsButton.classList.remove("bg-blue-500");
+            resultsButton.classList.add("bg-zinc-300")
+        });
+    });
+
+
+
+</script>
+
+{{ end }}
