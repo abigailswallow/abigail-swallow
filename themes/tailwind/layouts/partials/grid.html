@@ -5,7 +5,7 @@
     {{ end }}
 </div>  */}}
 
-<div id="tag-buttons" class="flex justify-center text-sm">
+<div id="tag-buttons" class="flex justify-center text-sm mb-3">
     <button class="bg-blue-500 text-white mx-1 px-3 py-1 rounded-full">All</button>
     {{ $displayedPages := where .Site.RegularPages "Params.unlisted" "!=" "true" }}
     {{ $tags := slice }}
@@ -31,7 +31,7 @@
     <div class="p-4 post {{ range .Params.tags }}{{ . }} {{ end }}">
         <a href="{{ .RelPermalink }}">
             <div class="w-full h-0 aspect-w-4 aspect-h-3">
-                <img src="{{ .Params.previewImage }}" alt="{{ .Title }}" class="object-cover mb-2 rounded-lg">
+                <img src="{{ .Params.previewImage }}" alt="{{ .Title }}" class="object-cover mb-2">
             </div>
             <h2 class="text-lg font-semibold mb-2">{{ .Title }}</h2>
         </a>
