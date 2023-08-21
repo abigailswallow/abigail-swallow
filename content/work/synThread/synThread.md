@@ -4,7 +4,7 @@ tags: [AI, UX-Design, DataViz]
 description: "A DataViz that transforms your Spotify listening history into a personalized textile."
 projectYear: 2022
 projectSummary: "synThread transforms your Spotify listening history into a personalized textile."
-previewImage: "https://images.unsplash.com/photo-1687045934883-6b617a084918?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8aVVJc25WdGpCMFl8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+previewImage: "/work/synThread/images/c_synthread_hero.jpg"
 home: true
 ---
 
