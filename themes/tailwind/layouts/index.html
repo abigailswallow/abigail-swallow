@@ -1,10 +1,14 @@
 {{ define "main" }}
 
-<div class="w-2/3">
-    <h1 class="text-3xl font-bold mb-8">This is a placeholder for a hero line.</h1>
+<div class="">
+    {{/* <p class="pb-3 font-sans text-2xl">Abigail Swallow</p> */}}
+    <h1 class="text-4xl font-medium mb-8 lg:w-2/3"> Design-engineer using
+        <span class="font-serif italic font-normal">systems-thinking</span> to solve
+        <a href="#sticky" class="font-serif italic font-normal underline">sticky problems.*</a>
+    </h1>
 </div>
 
-<hr class="border-4 border-black mb-10">
+<hr class="border-4 border-black dark:border-zinc-200 mb-10">
 
 
 <h2 class="font-bold text-xl">Selected Work</h2>
@@ -12,5 +16,81 @@
 {{- partial "grid.html" . -}}
 
 {{ .Content }}
+
+<hr class="border-4 border-black dark:border-zinc-200 my-10">
+
+<div class="about lg:w-2/3 lg:grid lg:grid-cols-4 gap-6">
+
+
+    <h2 class="font-bold text-xl">About Me</h2>
+
+
+    <div class="py-4">
+        <img class="lg:w-full w-1/3" src="/imgs/profile.JPG" alt="picture of Abigail smiling">
+    </div>
+
+    <div class="col-span-2 py-4">
+        <p class="mb-8 text-xl">
+            I'm a current student in Harvard University’s Masters of Design Engineering program, with a background in
+            Social Policy. I am passionate about leveraging emerging technologies to bring about change in a variety of
+            settings. Though my focus is problem solving at "high altitude" I have developed a skillset
+            around computational design, data science and industrial design methods. I am a versatile designer excited
+            about
+            applying my skills to challenging problems.
+        </p>
+
+        <a class="" href="/about">Learn More</a>
+    </div>
+
+</div>
+
+<div class="mt-8" id="sticky">
+    <p>*Or, in other words: wicked, systemic, intractable, entangled, ambiguous, etc.</p>
+</div>
+
+<div class="fixed bottom-4 right-4 z-50 bg-white border border-gray-300 rounded-lg p-2 shadow-md">
+    <button id="color-picker" class="border border-gray-300 p-2 rounded-lg focus:outline-none"></button>
+</div>
+
+
+
+
+<script>
+    const colorPicker = Pickr.create({
+        el: '#color-picker',
+        theme: 'nano', // You can change the theme if needed
+        default: '#ff5733', // Set a default color
+        comparison: false,
+        position: 'top-middle',
+        swatches: [
+        ],
+        components: {
+            preview: true,
+            opacity: false,
+            hue: true,
+            interaction: {
+                hex: false,
+                input: false,
+            },
+        },
+    });
+
+    colorPicker.on('change', (color) => {
+        // Get the selected color in HEX format
+        const selectedColor = color.toHEXA().toString();
+
+        // Apply the selected color to your site's accent elements
+        // You'll need to target your site's CSS classes and update their color values
+
+        document.querySelectorAll('.accent-color').forEach(element => {
+            element.style.color = selectedColor;
+        });
+
+        document.querySelectorAll('.accent-bg').forEach(element => {
+            element.style.color = selectedColor;
+        });
+    });
+</script>
+
 
 {{ end }}

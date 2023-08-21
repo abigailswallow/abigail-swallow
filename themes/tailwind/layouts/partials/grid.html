@@ -1,12 +1,12 @@
 {{/*  <div id="tag-buttons" class="flex justify-center text-sm">
-    <button class=" bg-blue-500 text-white mx-1 px-3 py-1 rounded-full ">All</button>
+    <button class=" bg-lime-400 text-white mx-1 px-3 py-1 rounded-full ">All</button>
     {{ range .Site.Taxonomies.tags }}
     <button class="bg-gray-200 text-gray-700 mx-1 px-3 py-1 rounded-full">{{ .Page.Title }}</button>
     {{ end }}
 </div>  */}}
 
 <div id="tag-buttons" class="flex justify-center text-sm mb-3">
-    <button class="bg-blue-500 text-white mx-1 px-3 py-1 rounded-full">All</button>
+    <button class="bg-lime-400 text-white mx-1 px-3 py-1 rounded-full">All</button>
     {{ $displayedPages := where .Site.RegularPages "Params.unlisted" "!=" "true" }}
     {{ $tags := slice }}
     {{ range $page := $displayedPages }}
@@ -33,9 +33,9 @@
             <div class="w-full h-0 aspect-w-4 aspect-h-3">
                 <img src="{{ .Params.previewImage }}" alt="{{ .Title }}" class="object-cover mb-2">
             </div>
-            <h2 class="text-lg font-semibold mb-2">{{ .Title }}</h2>
+            <h2 class="text-xl font-bold pt-3">{{ .Title }}</h2>
         </a>
-        <p class="text-gray-600 mb-4">{{ .Description }}</p>
+        <p class="dark:text-zinc-300 text-zinc-800 text-lg mb-4">{{ .Description }}</p>
         <div class="flex flex-wrap tags">
             {{ range .Params.tags }}
             <a href="/tags/{{ . | urlize }}" data-tag="{{ . }}" class="tag-link">
@@ -61,13 +61,13 @@
             button.addEventListener("click", function () {
                 // Remove 'active' class from all buttons
                 buttons.forEach(function (btn) {
-                    btn.classList.remove("bg-blue-500", "text-white");
+                    btn.classList.remove("bg-lime-400", "text-white");
                     btn.classList.add("bg-gray-200", "text-gray-700");
                 });
 
                 // Add 'active' class to the clicked button
                 button.classList.remove("bg-gray-200", "text-gray-700");
-                button.classList.add("bg-blue-500", "text-white");
+                button.classList.add("bg-lime-400", "text-white");
 
                 if (button.textContent === "All") {
                     // Show all posts if 'All' button is clicked
