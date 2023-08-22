@@ -14,7 +14,7 @@ module.exports = {
         accent: '#ff5733', // Your custom accent color
       },
       fontFamily: {
-        'sans': ['campaign', 'ui-sans-serif', 'system-ui'],
+        'sans': ['neue-haas-unica', 'ui-sans-serif', 'system-ui'],
         'serif': ['warnock-pro', 'ui-serif', 'Georgia'],
         'mono': ['ui-monospace', 'SFMono-Regular'],
       },

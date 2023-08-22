@@ -1,65 +1,39 @@
 {{ define "main" }}
-<main
-    class="justify-self-center mx-auto max-w-none w-2/3 px-6 mb-16 sm:px-4 md:px-0 prose dark:prose-invert prose-slate lg:prose-lg hover:prose-a:text-sky-500">
+<main class="justify-self-center mx-auto">
+    <div class="md:grid md:grid-cols-2">
+        <div id="left" class="font-sans" style="background-color: {{ .Params.leftBackgroundColor }}">
+            <div class="sticky top-0 py-8 mx-auto px-8 prose-lg prose-p:font-sans dark:prose-invert">
+                <h1 class="font-medium text-5xl mb-0">{{ .Title }}</h1>
+                <!-- Render left column image -->
+                {{ with .Params.leftImage }}
+                    <img src="{{ . }}" alt="Left Column Image" class="mb-0">
+                {{ end }}
 
-    <div class="description">
-        <h1 class="">{{ .Title }}</h1>
-        <p>{{ .Params.description }}</p>
+                <h2 class="mt-1">{{ .Params.description }}</h2>
 
-        <p>{{ .Params.projectYear }} |
-            {{ range $index, $tag := .Params.tags }}
-            {{ if $index }},{{ end }}
-            {{ $tag }}
-            {{ end }}
-        </p>
-
-        <p>{{ .Params.projectSummary }} </p>
+                <div class="pt-6 lg:grid lg:grid-cols-5 lg:gap-4">
+                    <div class="timeline col-span-1">
+                        <p class="underline mb-0">Timeline</p>
+                        <p class="mt-0">{{ .Params.timeline }}</p>
+                    </div>
+                    <div class="role col-span-2">
+                        <p class="underline mb-0">Role</p>
+                        <p class="mt-0">{{ .Params.role }}</p>
+                    </div>
+                    <div class="tools col-span-2">
+                        <p class="underline mb-0">Tools</p>
+                        <p class="mt-0">{{ .Params.tools }}</p>
+                    </div>
+                </div>
+                <p class="text-zinc-700 text-sm">Last updated on: {{ .Date.Format "January 2, 2006" }}</p>
+                
+            </div>
+        </div>
+        <div id="right" >
+            <div class="py-8 px-4 prose prose-p:text-xl light:prose-p:text-zinc-900 prose-headings:font-medium max-w-prose dark:prose-invert">
+                {{ .Content }}
+            </div>
+        </div>
     </div>
-
-    <div class="flex items-center justify-center mt-20 mb-10" id="content-buttons">
-        <button class="px-3 mx-1 rounded-md bg-blue-500" id="results-button">Results</button>
-        <button class="px-3 mx-1 rounded-md bg-zinc-300 " id="process-button">Process</button>
-    </div>
-
-    {{ .Content }}
-
 </main>
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const resultsButton = document.getElementById("results-button");
-        const processButton = document.getElementById("process-button");
-        const resultsDiv = document.getElementById("results");
-        const processDiv = document.getElementById("process");
-
-        // Show the "Results" div and hide the "Process" div by default
-        resultsDiv.style.display = "block";
-        processDiv.style.display = "none";
-
-        // Add event listener for the "Results" button
-        resultsButton.addEventListener("click", function () {
-            resultsDiv.style.display = "block";
-            processDiv.style.display = "none";
-            resultsButton.classList.remove("bg-zinc-300");
-            resultsButton.classList.add("bg-blue-500");
-            processButton.classList.remove("bg-blue-500");
-            processButton.classList.add("bg-zinc-300");
-        });
-
-        // Add event listener for the "Process" button
-        processButton.addEventListener("click", function () {
-            resultsDiv.style.display = "none";
-            processDiv.style.display = "block";
-            processButton.classList.remove("bg-zinc-300")
-            processButton.classList.add("bg-blue-500");
-            resultsButton.classList.remove("bg-blue-500");
-            resultsButton.classList.add("bg-zinc-300")
-        });
-    });
-
-
-
-</script>
-
 {{ end }}

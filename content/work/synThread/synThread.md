@@ -1,60 +1,61 @@
 ---
 title: synThread
-tags: [AI, UX-Design, DataViz]
-description: "A DataViz that transforms your Spotify listening history into a personalized textile."
+date: "2022-10-25T00:00:00"
 projectYear: 2022
-projectSummary: "synThread transforms your Spotify listening history into a personalized textile."
+tags: [AI, UX-Design, DataViz]
+description: "Transforming your Spotify listening history into a personalized textile."
+
+timeline: "6 Weeks"
+role: "UX designer, researcher in a team of 3"
+tools: "Figma, Python, Stable Diffusion, Dall-E, OpenCV, Spotify API"
+leftImage: "/work/synThread/images/c_synthread_hero.jpg"
+leftBackgroundColor: "#e45c3c"
+
 previewImage: "/work/synThread/images/c_synthread_hero.jpg"
 home: true
+
 ---
+    
+# The Process
 
-<div id="results">
+## Our Vision
+Create a dynamic data visualization web-app merging music and textiles, transforming Spotify listening history into personalized fabric patterns.
 
-## Overview
+## The Challenge
+synThread is a dynamic data visualization web-app that seamlessly merges the realms of music and textiles. Developed as part of a design studio class, the project was a collaborative effort among a team of three, including myself, Gail Alderson and Sophie Leamon. Our challenge was to craft an innovative data visualization concept centered around textiles, culminating in the creation of a personalized fabric design generated from a user's Spotify listening history.
 
-synThread delves into emerging technologies, data science techniques and UX design to create a captivating product concept and data visualization project. ***Our goal? To transform your Spotify listening history into a personalized textile by leveraging new technology to create bespoke visuals.*** The culmination of our efforts materialized in a prototype of the synThread web-app. Users can explore music intertwined with art, as their Spotify history comes to life in the form of interesting textiles.
-
-</div>
-
-<div id="process">
-
-## The Process
-
-### Exploring Spotify Data
-
-Our project was data-driven from the outset, utilizing the Spotify API and Python for data collection and analysis. Unraveling the variables provided by Spotify, we sought to quantify music taste and understand the complicated connections between music theory and cultural preferences. This meant attempting to analyze the variables given to us by Spotify such as, "Valence" or "Danceability" and how they mapped to our real world understanding of the music we listen to. 
-
+## Our Process
 ### Music Theory Research
 
-Briefly, we explored music theory and historical ways people have translated auditory experiences to the visual world. One particularly interested path of research was that into graphical scores -- the translation of musical scores to visual languages. We also explored precedent of data physicalization and the band t-shirt which served as our physical north star throughout the project. 
+![Graphical Scores](/work/synThread/images/graphicalscores.png)
 
-### Grouping Songs Into "Moods"
+Tapping into the experts at Harvard's music school we worked to understand how the elements of music (pitch, valence, key, etc.) get translated into feelings, preferences and abstract ideas.
+      
+### Data-Driven Exploration
+We simultaneously explored Spotify's API to understand what variables could be used to categorize someone's music taste. We worked to understand how to take something experienced auditorally and translate that into a visual language that resonated with the listener.
 
-**In order to create personalized textiles based on someone's music taste we needed a way accurately capture the essence of their taste.**
+We explored all of the variables offered in the Spotify API and compared them with the music our group was familiar with to test how well each of the variables captured the music.
 
-We leveraged a data-science technique, called k-means clustering, to categorize people's favorite songs into similar groups, creating clusters and shared characteristics of songs among diverse musical choices. From these musical clusters, we extracted evocative adjectives like "Ghoulish" and "Sunset" that captured the essence of the clusters of songs.
+![API data](/work/synThread/images/apiexploration.png)
 
-### Text-to-Image Textile Patterns
+### **Insight: The "mood" of a song cannot be described in just a handful of variables.**
 
-Utlizing the adjectives for someone's music taste we fed them into the Stable Diffusion API to generate a personalized textile pattern that captured the unique moods of a person's favorite music. Bridging the gap between technology and art, synThread wove music into tangible and visually captivating images.
+We needed a more complex way to analyze and capture someone's music taste across a variety of songs and genres. 
 
-## Web-App Design
+### The Solution
 
-### Iteration, iteration, iteration
+![Process explanation diagram](/work/synThread/images/process.png)
 
-Once we felt confident we had landed on a legitimate way to capture and visualize music taste, we worked on creating a web-app that would allow a person to interact with this concept and explore their own listening history. 
+Using Python and k-means clustering, we worked to develop a systems that grouped a user's songs into distinct categories or moods. We captured those categories with an adjective like "energetic" or "melancholy" and used those to generate textile patterns for each distinct mood using Stable Diffusion. To combine those patterns into one I created a script using OpenCV that merged the patterns together. 
 
-We worked to achieve two goals with our web-app:
-1. Provide users an opportunity to explore their music taste in the groupings we created using k-means. 
-2. Create excitement around music taste through the lens of personalization
+## A Web-App Experience to Explore Your Music
 
-Ultimated we created a tool that celebrates the fusion of technology, data science, and design, by telling someone's music story through textile patterns.
+### Creating the UX Design & Prototypes
+We worked to craft an exploratory experience that would allow a user to 1) Explore their music taste and 2) Create their own music taste textile. 
 
-</div>
-
-
-
-
+We developed many prototypes and worked to test them with our user base an assess the usability and functionality of the design.
 
 
+## Impact and Reflection
+SynThread stands as a testament to the power of innovation at the intersection of music, design, and technology. This project showcases my ability to bridge data science, user experience, and creative expression, contributing to a dynamic design narrative.
 

@@ -1,10 +1,18 @@
 ---
 title: The Short History of Women's Fencing
-tags: [DataViz, UX-Design]
-description: "Exploring the history of women's olympic saber fencing."
+date: "2023-05-12T00:00:00"
 projectYear: 2023
-projectSummary: ""
-previewImage: "https://images.unsplash.com/photo-1687045934883-6b617a084918?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8aVVJc25WdGpCMFl8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+tags: ['DataViz', 'UX-Design', 'p5.js']
+description: "Exploring the history of women's olympic saber fencing."
+
+timeline: "4 Weeks"
+role: "Indivual Project for MIT's Information Design Studio"
+tools: "Figma, p5.js"
+leftImage: "/work/FencingHistory/images/c_fencing_hero.png"
+leftBackgroundColor: "#0086a1"
+
+
+previewImage: "/work/FencingHistory/images/c_fencing_hero.png"
 home: true
 ---
 

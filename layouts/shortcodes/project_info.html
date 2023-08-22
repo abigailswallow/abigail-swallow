@@ -1,0 +1,13 @@
+<div class="description prose-lg">
+    <h1 class="">{{ .Title }}</h1>
+    <p>{{ .Params.description }}</p>
+
+    <p>{{ .Params.projectYear }} |
+        {{ range $index, $tag := .Params.tags }}
+        {{ if $index }},{{ end }}
+        {{ $tag }}
+        {{ end }}
+    </p>
+
+    <p>{{ .Params.projectSummary }} </p>
+</div>

@@ -1,10 +1,17 @@
 ---
 title: Horizon
+date: "2023-05-28T00:00:00"
+projectYear: 2023
 tags: [UX-Design, Game-Design]
 description: "A card game about the future of inclusive fashion."
-projectYear: 2023
-projectSummary: "Horizon is a card game that reveals the possibilities in the future of fashion."
-previewImage: "https://images.unsplash.com/photo-1687045934883-6b617a084918?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8aVVJc25WdGpCMFl8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+
+timeline: "8 Weeks"
+role: "Solo project"
+tools: "SolidWorks, Keyshot"
+leftImage: "/work/Horizon/images/horizon_hero.png"
+leftBackgroundColor: "#bfa9b2"
+
+previewImage: "/work/Horizon/images/horizon_hero.png"
 home: true
 ---
 
