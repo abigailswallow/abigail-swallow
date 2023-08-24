@@ -8,7 +8,7 @@ description: "Exploring the history of women's olympic saber fencing."
 timeline: "4 Weeks"
 role: "Indivual Project for MIT's Information Design Studio"
 tools: "Figma, p5.js"
-leftImage: "/work/FencingHistory/images/c_fencing_hero.png"
+leftImage: "/work/FencingHistory/images/demo_fencing.gif"
 leftBackgroundColor: "#EE334E"
 
 previewImage: "/work/FencingHistory/images/c_fencing_hero.png"
