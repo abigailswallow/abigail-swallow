@@ -5,8 +5,8 @@
     {{ end }}
 </div>  */}}
 
-<div id="tag-buttons" class="flex justify-center text-sm mb-3">
-    <button class="bg-lime-400 text-white mx-1 px-3 py-1 rounded-full">All</button>
+<div id="tag-buttons" class="flex justify-center md:text-sm text-xs mb-3 mt-1">
+    <button class="bg-lime-400 text-white mx-1 md:px-3 md:py-1 px-2 py-0.5 md:rounded-full">All</button>
     {{ $displayedPages := where .Site.RegularPages "Params.unlisted" "!=" "true" }}
     {{ $tags := slice }}
     {{ range $page := $displayedPages }}
@@ -17,7 +17,7 @@
         {{ end }}
     {{ end }}
     {{ range $tag := $tags }}
-        <button class="bg-gray-200 text-gray-700 mx-1 px-3 py-1 rounded-full">{{ $tag }}</button>
+        <button class="bg-gray-200 text-gray-700 mx-1 md:px-3 md:py-1 px-2 py-0.5 md:rounded-full">{{ $tag }}</button>
     {{ end }}
 </div>
 

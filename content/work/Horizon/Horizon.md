@@ -6,10 +6,10 @@ tags: [UX-Design, Game-Design]
 description: "A card game about the future of inclusive fashion."
 
 timeline: "8 Weeks"
-role: "Solo project"
-tools: "SolidWorks, Keyshot"
+role: "Research, game design, video editing, UX design in a team of 3."
+tools: "Figma, Fusion360, Adobe Illustrator, laser cutter"
 leftImage: "/work/Horizon/images/horizon_hero.png"
-leftBackgroundColor: "#bfa9b2"
+leftBackgroundColor: "#7359f6"
 
 previewImage: "/work/Horizon/images/horizon_hero.png"
 home: true
@@ -67,11 +67,11 @@ Lasting about 1 hour the game asks people to step into new roles like the CEO of
 Complementing the game, the companion app was an served as another resource for companies engaging in the exercise. It equipped users with an immersive learning experience, delving deeper into inclusive and sustainable design practices and **providing teams tangible ways to take what they learn in the game and apply it to their work.**
 
 ## How To Play
-
+<video controls>
+  <source src="/work/Horizon/images/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Lessons and Future Visions
-The project illuminated the potential for harnessing playful interactions as catalysts for profound change. The future envisions extending the game's impact, engaging corporations in redefining their design ethos, one card at a time.
-
-## Reflections
-"Horizon" symbolizes the power of collaboration, design, and innovation. It was a journey that underscored the potential of creative endeavors to transcend traditional boundaries, empowering industries to amplify their social and environmental impact.
+This project was one of many "firsts" for me. I had never designed a game or worked on a project centered so strongly on behavior change. While I don't think Horizon is necessarily the way the fashion world will transform to become more inclusive the exercise of design provided an opportunity to engage with difficult and important questions and pushed me to think critically about the role of design in change making. 
 
