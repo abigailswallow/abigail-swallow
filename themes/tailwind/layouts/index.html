@@ -5,7 +5,9 @@
         {{/* <p class="pb-3 font-sans text-2xl">Abigail Swallow</p> */}}
         <h1 class="text-4xl font-medium mt-6 mb-8 lg:w-2/3"> Optimistic design-engineer using
             <span class="font-serif italic font-normal">systems-thinking</span> to solve
-            <a href="#sticky" class="font-serif italic font-normal underline">sticky problems.*</a>
+            <a href="#sticky"
+                class="font-serif italic font-normal underline hover:text-accent transition ease-in-out duration-150">sticky
+                problems.*</a>
         </h1>
     </div>
 
@@ -20,7 +22,7 @@
 
     <hr class="border-4 border-black dark:border-zinc-200 my-10">
 
-    <div class="about lg:w-2/3 lg:grid lg:grid-cols-4 gap-6">
+    <div class="about lg:w-2/3 lg:grid lg:grid-cols-4 gap-8">
 
 
         <h2 class="font-medium text-xl">About Me</h2>
@@ -43,62 +45,17 @@
                 applying my skills to challenging problems.
             </p>
 
-            <a class="" href="/about">Learn More</a>
+            <a class="underline underline-offset-2 hover:text-accent transition ease-in-out duration-150" href="/about">Learn More</a>
         </div>
 
     </div>
 
     <div class="mt-8" id="sticky">
-        <p>*Or, in other words: wicked, systemic, intractable, entangled, ambiguous, etc.</p>
+        <p class="underline">*Or, in other words: wicked, systemic, intractable, entangled, ambiguous, etc.</p>
     </div>
 
-    <div class="fixed bottom-4 right-4 z-50 bg-white border border-gray-300 rounded-lg p-2 shadow-md">
-        <button id="color-picker" class="border border-gray-300 p-2 rounded-lg focus:outline-none"></button>
-    </div>
+
 
 </div>
-
-
-
-
-
-
-<script>
-    const colorPicker = Pickr.create({
-        el: '#color-picker',
-        theme: 'nano', // You can change the theme if needed
-        default: '#ff5733', // Set a default color
-        comparison: false,
-        position: 'top-middle',
-        swatches: [
-        ],
-        components: {
-            preview: true,
-            opacity: false,
-            hue: true,
-            interaction: {
-                hex: false,
-                input: false,
-            },
-        },
-    });
-
-    colorPicker.on('change', (color) => {
-        // Get the selected color in HEX format
-        const selectedColor = color.toHEXA().toString();
-
-        // Apply the selected color to your site's accent elements
-        // You'll need to target your site's CSS classes and update their color values
-
-        document.querySelectorAll('.accent-color').forEach(element => {
-            element.style.color = selectedColor;
-        });
-
-        document.querySelectorAll('.accent-bg').forEach(element => {
-            element.style.color = selectedColor;
-        });
-    });
-</script>
-
 
 {{ end }}
