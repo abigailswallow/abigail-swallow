@@ -8,7 +8,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {{ range .Pages }}
         <div class="p-4 post {{ range .Params.tags }}{{ . }} {{ end }}">
-            <a href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
+            <a href="{{ .RelPermalink }}">
                 <div class="w-full h-0 aspect-w-4 aspect-h-3">
                     <img src="{{ .Params.previewImage }}" alt="{{ .Title }}" class="object-cover mb-2 hover:skew-x-2 hover:-skew-y-2 transition ease-in-out duration-200">
                 </div>
@@ -17,7 +17,7 @@
             <p class="dark:text-zinc-300 text-zinc-800 text-lg mb-4">{{ .Description }}</p>
             <div class="flex flex-wrap tags">
                 {{ range .Params.tags }}
-                <a href="/tags/{{ . | urlize }}" data-tag="{{ . }}" class="tag-link hover:text-accent transition ease-in-out duration-150" aria-label="{{ . }}">
+                <a href="/tags/{{ . | urlize }}" data-tag="{{ . }}" class="tag-link hover:text-accent transition ease-in-out duration-150">
                     <span class="text-sm mr-2 mb-2 underline">{{ . }}</span>
                 </a>
                 {{ end }}
