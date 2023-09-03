@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        accent: '#ff5733', // Your custom accent color
+        accent: '#12685E', // Your custom accent color
         accent_dark: '#ff8b33',
       },
       fontFamily: {

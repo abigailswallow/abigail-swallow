@@ -24,7 +24,7 @@
     <div class="p-4 post {{ range .Params.tags }}{{ . }} {{ end }}">
         <a href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
             <div class="w-full h-0 aspect-w-4 aspect-h-3">
-                <img src="{{ .Params.previewImage }}" alt="{{ .Title }}" class="object-cover mb-2 hover:skew-x-2 hover:-skew-y-2 transition ease-in-out duration-200">
+                <img src="{{ .Params.previewImage }}" alt="{{ .Title }} hero image" class="object-cover mb-2 hover:skew-x-2 hover:-skew-y-2 transition ease-in-out duration-200">
             </div>
             <h2 class="text-xl font-medium pt-3">{{ .Title }}</h2>
         </a>
