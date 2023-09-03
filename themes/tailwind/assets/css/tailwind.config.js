@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       colors: {
         accent: '#12685E', // Your custom accent color
-        accent_dark: '#ff8b33',
+        accent_dark: '#22BFAC',
       },
       fontFamily: {
         'sans': ['neue-haas-unica', 'ui-sans-serif', 'system-ui'],
