@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Playground on Abigail Swallow</title>
+    <link>http://example.org/playground/</link>
+    <description>Recent content in Playground on Abigail Swallow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2022-{year} Abigail Swallow. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 28 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/playground/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weather Apps in p5.js</title>
+      <link>http://example.org/playground/weather/weather/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/playground/weather/weather/</guid>
+      <description>Reinventing a classic As a &amp;ldquo;warmup&amp;rdquo; project for the Information Design and Visualization studio course at MIT I took in the Spring of 2023, we created weather apps. We were first tasked with creating a traditional weather app with a personal spin. I chose to create an app that helped you see the weather of your friends and family, relative to your own.
+Making it &amp;ldquo;abstract&amp;rdquo; I wanted to push my design further by making an abstract interpretation of a weather app.</description>
+    </item>
+    
+  </channel>
+</rss>

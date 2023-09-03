@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work on Abigail Swallow</title>
+    <link>http://example.org/work/</link>
+    <description>Recent content in Work on Abigail Swallow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2022-{year} Abigail Swallow. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 28 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Horizon</title>
+      <link>http://example.org/work/horizon/horizon/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/work/horizon/horizon/</guid>
+      <description>Designing for Inclusion and Sustainability Project Brief A product of my first-year studio course in my Master of Design Engineering program, &amp;ldquo;Horizon&amp;rdquo; was a collaborative effort among a team of three: myself, Kamila Czachorowski and Ghalya Alsanea. The project revolved around the intersection of fashion, textiles, and sustainability, aiming to re-imagine how apparel corporations approach design, particularly for gender non-conforming people.
+The central ambition was to catalyze a more inclusive design approach, catering to gender-non-conforming consumers whose voices often remain marginalized in mainstream fashion.</description>
+    </item>
+    
+    <item>
+      <title>The Short History of Women&#39;s Fencing</title>
+      <link>http://example.org/work/fencinghistory/fencinghistory/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/work/fencinghistory/fencinghistory/</guid>
+      <description>Who is the G.O.A.T of Women&amp;rsquo;s Saber Fencing? Visualizing Fencing History (2003-2023) Project Context As a culminating project for an information design and visualization course at MIT, I transformed complex historical data from senior women&amp;rsquo;s saber fencing events into an accessible and engaging visual narrative. Ultimately creating an interactive data visualization showcasing the winners of senior women&amp;rsquo;s saber fencing events from the recognition of the sport as an Olympic event to the present day (2003-2023).</description>
+    </item>
+    
+    <item>
+      <title>synThread</title>
+      <link>http://example.org/work/synthread/synthread/</link>
+      <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/work/synthread/synthread/</guid>
+      <description>The Process Our Vision Create a dynamic data visualization web-app merging music and textiles, transforming Spotify listening history into personalized fabric patterns.
+The Challenge synThread is a dynamic data visualization web-app that seamlessly merges the realms of music and textiles. Developed as part of the Master of Design Engineering&amp;rsquo;s first-year studio course, the project was a collaborative effort among a team of three, including myself, Gail Alderson and Sophie Leamon. Our challenge was to craft an innovative data visualization concept centered around textiles, culminating in the creation of a personalized fabric design generated from a user&amp;rsquo;s Spotify listening history.</description>
+    </item>
+    
+    <item>
+      <title>Carebot</title>
+      <link>http://example.org/work/carebot/carebot/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/work/carebot/carebot/</guid>
+      <description>&amp;ldquo;Aging in Grace&amp;rdquo; Inspired by my grandmother Annie, Carbot&amp;rsquo;s aim is to empower aging adults by facilitating medication management and fostering connections with their care team and community. While it&amp;rsquo;s a healthcare device in terms of functionality, at its core it&amp;rsquo;s about providing autonomy and connection to adults seeking to age in place.
+What began as a 1-week design sprint with the brief, &amp;ldquo;Identify a need and design a robot to solve that need&amp;rdquo; ended as a personal project.</description>
+    </item>
+    
+  </channel>
+</rss>

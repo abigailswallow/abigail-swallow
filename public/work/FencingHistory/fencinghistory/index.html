@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin>
+    <link rel="preload" href="https://p.typekit.net" crossorigin>
+    
+    <link rel="icon" href="imgs/favicons/favicon.ico" sizes="any">
+    <link rel="icon" href="imgs/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="imgs/favicons/apple-touch-icon.png">
+
+    
+    <link rel="stylesheet" href="https://use.typekit.net/jdl0pek.css">
+
+    <title>The Short History of Women&#39;s Fencing - Abigail Swallow</title>
+    <meta name="description" content="Exploring the history of women&#39;s olympic saber fencing." />
+    <meta name="generator" content="Hugo 0.117.0">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+
+    <script>
+        
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+</head>
+
+<body class="flex flex-col min-h-screen bg-zinc-50 dark:bg-black text-zinc-950 dark:text-zinc-200"><header>
+  <nav class="flex items-center justify-between p-4 text-md">
+
+    <a href="/" class="font-medium text-lg" aria-label="Abigail Swallow">Abigail Swallow</a>
+
+    <div class="">
+      <a href="/about" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="About">About</a>
+      <a href="/work" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="Work">Work</a>
+      <a href="/playground" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="Playground">Playground</a>
+      <button id="theme-toggle" aria-label="Dark mode" type="button"
+        class="ml-2 text-zinc-600 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700 focus:outline-none focus:ring-4 focus:ring-zinc-200 dark:focus:ring-zinc-700 rounded-lg text-sm p-2.5">
+        <i id="theme-toggle-dark-icon" class="w-5 h-5 fa-solid fa-moon" fill="currentColor"></i>
+        <i id="theme-toggle-light-icon" class="w-5 h-5 fa-solid fa-sun" fill="currentColor"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<script>
+  var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+  var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+  
+  if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon.style.display = 'inline-block';
+    themeToggleDarkIcon.style.display = 'none';
+  } else {
+    themeToggleDarkIcon.style.display = 'inline-block';
+    themeToggleLightIcon.style.display = 'none';
+  }
+
+  var themeToggleBtn = document.getElementById('theme-toggle');
+
+  themeToggleBtn.addEventListener('click', function () {
+
+    
+    themeToggleDarkIcon.style.display = themeToggleDarkIcon.style.display === 'none' ? 'inline-block' : 'none';
+    themeToggleLightIcon.style.display = themeToggleLightIcon.style.display === 'none' ? 'inline-block' : 'none';
+
+    
+    if (localStorage.getItem('color-theme')) {
+      if (localStorage.getItem('color-theme') === 'light') {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      }
+
+      
+    } else {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      }
+    }
+
+  });
+</script><main class="flex-1 grow mx-auto w-screen max-w-screen-2xl pt-4">
+<main class="justify-self-center mx-auto">
+    <div class="md:grid md:grid-cols-2">
+        <div id="left" class="font-sans" style="background-color: #EE334E">
+            <div class="sticky top-0 py-8 mx-auto px-8 prose-lg prose-p:font-sans dark:prose-invert">
+                <h1 class="font-medium text-5xl mb-0">The Short History of Women&#39;s Fencing</h1>
+                
+                
+                    <img src="/work/FencingHistory/images/demo_fencing.gif" alt="Left Column Image" class="mb-0">
+                
+
+                <h2 class="mt-1">Exploring the history of women&#39;s olympic saber fencing.</h2>
+
+                <div class="pt-6 lg:grid lg:grid-cols-5 lg:gap-4">
+                    <div class="timeline col-span-1">
+                        <p class="underline mb-0">Timeline</p>
+                        <p class="mt-0">4 Weeks</p>
+                    </div>
+                    <div class="role col-span-2">
+                        <p class="underline mb-0">Role</p>
+                        <p class="mt-0">Indivual Project for MIT&#39;s Information Design Studio</p>
+                    </div>
+                    <div class="tools col-span-2">
+                        <p class="underline mb-0">Tools</p>
+                        <p class="mt-0">Figma, p5.js</p>
+                    </div>
+                </div>
+                <p class="text-zinc-700 text-sm">Last updated on: May 12, 2023</p>
+                
+            </div>
+        </div>
+        <div id="right" >
+            <div class="py-8 px-4 prose prose-p:text-xl light:prose-p:text-zinc-900 prose-headings:font-medium max-w-prose dark:prose-invert">
+                <h1 id="who-is-the-goat-of-womens-saber-fencing">Who is the G.O.A.T of Women&rsquo;s Saber Fencing?</h1>
+<h2 id="visualizing-fencing-history-2003-2023">Visualizing Fencing History (2003-2023)</h2>
+<h3 id="project-context">Project Context</h3>
+<p>As a culminating project for an <a href="https://infodesign.mit.edu/">information design and visualization course at MIT</a>, I transformed complex historical data from senior women&rsquo;s saber fencing events into an accessible and engaging visual narrative. Ultimately creating an interactive data visualization showcasing the winners of senior women&rsquo;s saber fencing events from the recognition of the sport as an Olympic event to the present day (2003-2023).</p>
+<p>Despite the fact that men&rsquo;s fencing debuted in the first Olympic games, women&rsquo;s fencing has only recently been recognized. I sought to highlight this disparity by showcasing the short history of the women&rsquo;s event.</p>
+<h2 id="a-passion-project">A Passion Project</h2>
+<p><img src="/work/FencingHistory/images/headshot.jpeg" alt="a headshot of Abigail in fencing uniform circa 2018">
+I have been a fencer since I was 12 and took on this project as an opportunity to highlight a relatively obscure sport. My objective was to capture the essence of the sport&rsquo;s senior women&rsquo;s saber category by encapsulating the evolution of its champions across two decades.</p>
+<h2 id="my-process">My Process</h2>
+<h3 id="creating-figma-mockups">Creating Figma Mockups</h3>
+<p><img src="/work/FencingHistory/images/mockups.png" alt="figma mockups of data concepts">
+Figma served as the canvas where I translated my ideas into visual mockups and sketches. By plotting out the visualization&rsquo;s structure, I envisioned its dual functionality: an overview of tournaments and a detailed head-to-head comparison. I worked to refine the readability of the data and design key interaction points to ensure usability.</p>
+<h3 id="creating-a-dataset-with-python--web-scraping">Creating a Dataset with Python &amp; Web Scraping</h3>
+<p>Transforming concepts into reality necessitated finding a dataset with historical fencing results. The problem? That dataset didn&rsquo;t exist. Building upon an existing Python scraping <a href="https://github.com/amichaelsen/fie-fencing-dataset">project from GitHub</a>, I worked to restructure the code to scrape the international fencing federation&rsquo;s website for results from the last two decades of saber fencing tournaments. I then underwent the arduous process of cleaning and labeling the data so I could work with it in p5.js.</p>
+<h3 id="developing-the-concept-with-p5js">Developing the Concept with p5.js</h3>
+<p>Using p5.js to build the interactive visualization, I created a dynamic digital experience that offers two distinct screens, each catering to different dimensions of the sport of fencing: head-to-head and overall rankings.</p>
+<h2 id="the-user-experience">The User Experience</h2>
+<h3 id="wins-overtime">Wins Overtime</h3>
+<p><img src="/work/FencingHistory/images/homescreen.png" alt="Overview Screen"></p>
+<p>The initial screen focuses on the entire history of women&rsquo;s saber fencing by providing an overview of individual fencer&rsquo;s wins and losses overtime. Users can trace the trajectories of fencers, observe the rise of champions, and gain an appreciation for the sport&rsquo;s evolution. When viewing this screen, I hope users appreciate the dominance of several key players in fencing&rsquo;s history, they are the &ldquo;Serenas&rdquo; of my sport.</p>
+<h3 id="head-to-head-comparison-delving-into-rivalries">Head-to-Head Comparison: Delving into Rivalries</h3>
+<p><img src="/work/FencingHistory/images/head-to-head.png" alt="Comparison Screen"></p>
+<p>The second screen delves into the microcosm of fencing rivalries. Users can select specific fencers and instantly summon a head-to-head comparison. This feature adds depth to the exploration, offering insights into the dynamics between athletes who have left their mark on the sport.</p>
+<h2 id="learnings-and-the-future">Learnings and the Future</h2>
+<p>This visualization was a chance to delve into the intersections of sport, data and design, a particular passion of mine.
+In the future, this visualization could be extended to other fencing categories and provide a way to enhance knowledge of the sport.</p>
+<p>I was inspired by my love of <a href="https://projects.fivethirtyeight.com/nba-player-ratings/">FiveThirtyEight&rsquo;s sports visualizations</a> when making this project and continue to be motivated by the way data can bring to light the disparities in the sporting world. In the future, I&rsquo;d love to do a broader comparison that shows the contrasting ways fencing has evolved across genders.</p>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+    </main><footer class="bottom-0 w-full p-3 mt-3 text-center  border-t border-zinc-200 dark:border-zinc-700">
+    <div class="text-zinc-600 text-md">
+        <a href="https://linkedin.com/in/abigail-swallow" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Exit to view Abigail's LinkedIn page"><i
+                class="fa-brands fa-linkedin fa-lg"></i></a>
+        <a href="mailto:abigail.r.swallow@gmail.com" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Send an email to Abigail"><i
+                class="fa-solid fa-envelope fa-lg"></i></a>
+        <a href="https://github.com/abigailswallow" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Exit to view Abigail's github page"><i
+                class="fa-brands fa-github fa-lg"></i></a>
+    </div>
+
+    <div class="mt-3 text-zinc-400 text-xs">
+        <p>coded by moi with <a href="https://gohugo.io" class="underline hover:text-fuchsia-600" aria-label="Hugo">Hugo</a> and <a
+                href="https://tailwindcss.com" class="underline hover:text-sky-400" aria-label="TailwindCSS">TailwindCSS</a></p>
+        <p class="copyright">&copy; 2022-2023 Abigail Swallow. All rights reserved. </p>
+    </div>
+</footer><script src="https://kit.fontawesome.com/4b71c30471.js" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

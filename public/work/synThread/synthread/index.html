@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin>
+    <link rel="preload" href="https://p.typekit.net" crossorigin>
+    
+    <link rel="icon" href="imgs/favicons/favicon.ico" sizes="any">
+    <link rel="icon" href="imgs/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="imgs/favicons/apple-touch-icon.png">
+
+    
+    <link rel="stylesheet" href="https://use.typekit.net/jdl0pek.css">
+
+    <title>synThread - Abigail Swallow</title>
+    <meta name="description" content="Transforming your Spotify listening history into a personalized textile." />
+    <meta name="generator" content="Hugo 0.117.0">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+
+    <script>
+        
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+</head>
+
+<body class="flex flex-col min-h-screen bg-zinc-50 dark:bg-black text-zinc-950 dark:text-zinc-200"><header>
+  <nav class="flex items-center justify-between p-4 text-md">
+
+    <a href="/" class="font-medium text-lg" aria-label="Abigail Swallow">Abigail Swallow</a>
+
+    <div class="">
+      <a href="/about" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="About">About</a>
+      <a href="/work" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="Work">Work</a>
+      <a href="/playground" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="Playground">Playground</a>
+      <button id="theme-toggle" aria-label="Dark mode" type="button"
+        class="ml-2 text-zinc-600 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700 focus:outline-none focus:ring-4 focus:ring-zinc-200 dark:focus:ring-zinc-700 rounded-lg text-sm p-2.5">
+        <i id="theme-toggle-dark-icon" class="w-5 h-5 fa-solid fa-moon" fill="currentColor"></i>
+        <i id="theme-toggle-light-icon" class="w-5 h-5 fa-solid fa-sun" fill="currentColor"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<script>
+  var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+  var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+  
+  if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon.style.display = 'inline-block';
+    themeToggleDarkIcon.style.display = 'none';
+  } else {
+    themeToggleDarkIcon.style.display = 'inline-block';
+    themeToggleLightIcon.style.display = 'none';
+  }
+
+  var themeToggleBtn = document.getElementById('theme-toggle');
+
+  themeToggleBtn.addEventListener('click', function () {
+
+    
+    themeToggleDarkIcon.style.display = themeToggleDarkIcon.style.display === 'none' ? 'inline-block' : 'none';
+    themeToggleLightIcon.style.display = themeToggleLightIcon.style.display === 'none' ? 'inline-block' : 'none';
+
+    
+    if (localStorage.getItem('color-theme')) {
+      if (localStorage.getItem('color-theme') === 'light') {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      }
+
+      
+    } else {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      }
+    }
+
+  });
+</script><main class="flex-1 grow mx-auto w-screen max-w-screen-2xl pt-4">
+<main class="justify-self-center mx-auto">
+    <div class="md:grid md:grid-cols-2">
+        <div id="left" class="font-sans" style="background-color: #e45c3c">
+            <div class="sticky top-0 py-8 mx-auto px-8 prose-lg prose-p:font-sans dark:prose-invert">
+                <h1 class="font-medium text-5xl mb-0">synThread</h1>
+                
+                
+                    <img src="/work/synThread/images/c_synthread_hero.jpg" alt="Left Column Image" class="mb-0">
+                
+
+                <h2 class="mt-1">Transforming your Spotify listening history into a personalized textile.</h2>
+
+                <div class="pt-6 lg:grid lg:grid-cols-5 lg:gap-4">
+                    <div class="timeline col-span-1">
+                        <p class="underline mb-0">Timeline</p>
+                        <p class="mt-0">6 Weeks</p>
+                    </div>
+                    <div class="role col-span-2">
+                        <p class="underline mb-0">Role</p>
+                        <p class="mt-0">UX designer, researcher in a team of 3</p>
+                    </div>
+                    <div class="tools col-span-2">
+                        <p class="underline mb-0">Tools</p>
+                        <p class="mt-0">Figma, Python, Stable Diffusion, Dall-E, OpenCV, Spotify API</p>
+                    </div>
+                </div>
+                <p class="text-zinc-700 text-sm">Last updated on: October 25, 2022</p>
+                
+            </div>
+        </div>
+        <div id="right" >
+            <div class="py-8 px-4 prose prose-p:text-xl light:prose-p:text-zinc-900 prose-headings:font-medium max-w-prose dark:prose-invert">
+                <h1 id="the-process">The Process</h1>
+<h2 id="our-vision">Our Vision</h2>
+<p>Create a dynamic data visualization web-app merging music and textiles, transforming Spotify listening history into personalized fabric patterns.</p>
+<h2 id="the-challenge">The Challenge</h2>
+<p>synThread is a dynamic data visualization web-app that seamlessly merges the realms of music and textiles. Developed as part of the <a href="https://mde.harvard.edu/">Master of Design Engineering&rsquo;s</a> first-year studio course, the project was a collaborative effort among a team of three, including myself, Gail Alderson and Sophie Leamon. Our challenge was to craft an innovative data visualization concept centered around textiles, culminating in the creation of a personalized fabric design generated from a user&rsquo;s Spotify listening history.</p>
+<h2 id="our-process">Our Process</h2>
+<h3 id="music-theory-research">Music Theory Research</h3>
+<p><img src="/work/synThread/images/graphicalscores.png" alt="Graphical Scores"></p>
+<p>Tapping into the experts at Harvard&rsquo;s music school we worked to understand how the elements of music (pitch, valence, key, etc.) get translated into feelings, preferences and abstract ideas.</p>
+<h3 id="data-driven-exploration">Data-Driven Exploration</h3>
+<p>We simultaneously explored Spotify&rsquo;s API to understand what variables could be used to categorize someone&rsquo;s music taste. We worked to understand how to take something experienced through listening and translate that into a visual language that resonated with the listener.</p>
+<p>We explored all of the variables offered in the Spotify API and compared them with the music our group was familiar with to test how well each of the variables captured the music.</p>
+<p><img src="/work/synThread/images/apiexploration.png" alt="API data"></p>
+<h3 id="insight-the-mood-of-a-song-cannot-be-described-in-just-a-handful-of-variables"><strong>Insight: The &ldquo;mood&rdquo; of a song cannot be described in just a handful of variables.</strong></h3>
+<p>We needed a more complex way to analyze and capture someone&rsquo;s music taste across a variety of songs and genres.</p>
+<h3 id="the-solution">The Solution</h3>
+<p><img src="/work/synThread/images/process.png" alt="Process explanation diagram"></p>
+<p>Using Python and k-means clustering, we worked to develop a systems that grouped a user&rsquo;s songs into distinct categories or moods. We captured those categories with an adjective like &ldquo;energetic&rdquo; or &ldquo;melancholy&rdquo; and used those to generate textile patterns for each distinct mood using Stable Diffusion. To combine those patterns into one I created a script using OpenCV that merged the patterns together.</p>
+<h2 id="a-web-app-experience-to-explore-your-music">A Web-App Experience to Explore Your Music</h2>
+<h3 id="creating-the-ux-design--prototypes">Creating the UX Design &amp; Prototypes</h3>
+<p>We worked to craft an exploratory experience that would allow a user to 1) Explore their music taste and 2) Create their own music taste textile.</p>
+<p>We developed many prototypes and worked to test them with our user base an assess the usability and functionality of the design. Ultimately, the project culminated in a functioning web-app prototype.</p>
+<video controls loop autoplay>
+  <source src="/work/synThread/videos/c_demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<h2 id="reflections">Reflections</h2>
+<p>synThread was the first project I did that combined my interests in AI and data-science with my love of UX and design. I learned tons from my group members in terms of UX best-practices and data science capabilities, things I&rsquo;ve since leveraged to make my projects more technically sound. If I had more time, I&rsquo;d want to work to better the abstraction process and work to develop a fully functioning web prototype.</p>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+    </main><footer class="bottom-0 w-full p-3 mt-3 text-center  border-t border-zinc-200 dark:border-zinc-700">
+    <div class="text-zinc-600 text-md">
+        <a href="https://linkedin.com/in/abigail-swallow" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Exit to view Abigail's LinkedIn page"><i
+                class="fa-brands fa-linkedin fa-lg"></i></a>
+        <a href="mailto:abigail.r.swallow@gmail.com" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Send an email to Abigail"><i
+                class="fa-solid fa-envelope fa-lg"></i></a>
+        <a href="https://github.com/abigailswallow" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Exit to view Abigail's github page"><i
+                class="fa-brands fa-github fa-lg"></i></a>
+    </div>
+
+    <div class="mt-3 text-zinc-400 text-xs">
+        <p>coded by moi with <a href="https://gohugo.io" class="underline hover:text-fuchsia-600" aria-label="Hugo">Hugo</a> and <a
+                href="https://tailwindcss.com" class="underline hover:text-sky-400" aria-label="TailwindCSS">TailwindCSS</a></p>
+        <p class="copyright">&copy; 2022-2023 Abigail Swallow. All rights reserved. </p>
+    </div>
+</footer><script src="https://kit.fontawesome.com/4b71c30471.js" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

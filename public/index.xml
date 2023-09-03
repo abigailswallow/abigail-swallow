@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abigail Swallow</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Abigail Swallow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2022-{year} Abigail Swallow. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 28 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>A little bit about who I am, what I do and why. Visit my now page for more about what I&amp;rsquo;ve been up to to recently.
+I&amp;rsquo;m an optimistic problem solver: Working on a chess playing robot with my friend, Allison Karp. Whether it&#39;s a tricky math problem or a grander societal issue, what motivates me is getting stuck in sticky problems.
+This love led me first to study Social Policy at Northwestern University where I learned how to adopt a 10,000 foot view to solve problems at a large scale.</description>
+    </item>
+    
+    <item>
+      <title>Horizon</title>
+      <link>http://example.org/work/horizon/horizon/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/work/horizon/horizon/</guid>
+      <description>Designing for Inclusion and Sustainability Project Brief A product of my first-year studio course in my Master of Design Engineering program, &amp;ldquo;Horizon&amp;rdquo; was a collaborative effort among a team of three: myself, Kamila Czachorowski and Ghalya Alsanea. The project revolved around the intersection of fashion, textiles, and sustainability, aiming to re-imagine how apparel corporations approach design, particularly for gender non-conforming people.
+The central ambition was to catalyze a more inclusive design approach, catering to gender-non-conforming consumers whose voices often remain marginalized in mainstream fashion.</description>
+    </item>
+    
+    <item>
+      <title>Weather Apps in p5.js</title>
+      <link>http://example.org/playground/weather/weather/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/playground/weather/weather/</guid>
+      <description>Reinventing a classic As a &amp;ldquo;warmup&amp;rdquo; project for the Information Design and Visualization studio course at MIT I took in the Spring of 2023, we created weather apps. We were first tasked with creating a traditional weather app with a personal spin. I chose to create an app that helped you see the weather of your friends and family, relative to your own.
+Making it &amp;ldquo;abstract&amp;rdquo; I wanted to push my design further by making an abstract interpretation of a weather app.</description>
+    </item>
+    
+    <item>
+      <title>The Short History of Women&#39;s Fencing</title>
+      <link>http://example.org/work/fencinghistory/fencinghistory/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/work/fencinghistory/fencinghistory/</guid>
+      <description>Who is the G.O.A.T of Women&amp;rsquo;s Saber Fencing? Visualizing Fencing History (2003-2023) Project Context As a culminating project for an information design and visualization course at MIT, I transformed complex historical data from senior women&amp;rsquo;s saber fencing events into an accessible and engaging visual narrative. Ultimately creating an interactive data visualization showcasing the winners of senior women&amp;rsquo;s saber fencing events from the recognition of the sport as an Olympic event to the present day (2003-2023).</description>
+    </item>
+    
+    <item>
+      <title>synThread</title>
+      <link>http://example.org/work/synthread/synthread/</link>
+      <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/work/synthread/synthread/</guid>
+      <description>The Process Our Vision Create a dynamic data visualization web-app merging music and textiles, transforming Spotify listening history into personalized fabric patterns.
+The Challenge synThread is a dynamic data visualization web-app that seamlessly merges the realms of music and textiles. Developed as part of the Master of Design Engineering&amp;rsquo;s first-year studio course, the project was a collaborative effort among a team of three, including myself, Gail Alderson and Sophie Leamon. Our challenge was to craft an innovative data visualization concept centered around textiles, culminating in the creation of a personalized fabric design generated from a user&amp;rsquo;s Spotify listening history.</description>
+    </item>
+    
+    <item>
+      <title>Carebot</title>
+      <link>http://example.org/work/carebot/carebot/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/work/carebot/carebot/</guid>
+      <description>&amp;ldquo;Aging in Grace&amp;rdquo; Inspired by my grandmother Annie, Carbot&amp;rsquo;s aim is to empower aging adults by facilitating medication management and fostering connections with their care team and community. While it&amp;rsquo;s a healthcare device in terms of functionality, at its core it&amp;rsquo;s about providing autonomy and connection to adults seeking to age in place.
+What began as a 1-week design sprint with the brief, &amp;ldquo;Identify a need and design a robot to solve that need&amp;rdquo; ended as a personal project.</description>
+    </item>
+    
+  </channel>
+</rss>

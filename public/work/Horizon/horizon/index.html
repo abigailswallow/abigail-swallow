@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin>
+    <link rel="preload" href="https://p.typekit.net" crossorigin>
+    
+    <link rel="icon" href="imgs/favicons/favicon.ico" sizes="any">
+    <link rel="icon" href="imgs/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="imgs/favicons/apple-touch-icon.png">
+
+    
+    <link rel="stylesheet" href="https://use.typekit.net/jdl0pek.css">
+
+    <title>Horizon - Abigail Swallow</title>
+    <meta name="description" content="A card game about the future of inclusive fashion." />
+    <meta name="generator" content="Hugo 0.117.0">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+
+    <script>
+        
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+</head>
+
+<body class="flex flex-col min-h-screen bg-zinc-50 dark:bg-black text-zinc-950 dark:text-zinc-200"><header>
+  <nav class="flex items-center justify-between p-4 text-md">
+
+    <a href="/" class="font-medium text-lg" aria-label="Abigail Swallow">Abigail Swallow</a>
+
+    <div class="">
+      <a href="/about" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="About">About</a>
+      <a href="/work" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="Work">Work</a>
+      <a href="/playground" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="Playground">Playground</a>
+      <button id="theme-toggle" aria-label="Dark mode" type="button"
+        class="ml-2 text-zinc-600 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700 focus:outline-none focus:ring-4 focus:ring-zinc-200 dark:focus:ring-zinc-700 rounded-lg text-sm p-2.5">
+        <i id="theme-toggle-dark-icon" class="w-5 h-5 fa-solid fa-moon" fill="currentColor"></i>
+        <i id="theme-toggle-light-icon" class="w-5 h-5 fa-solid fa-sun" fill="currentColor"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<script>
+  var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+  var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+  
+  if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon.style.display = 'inline-block';
+    themeToggleDarkIcon.style.display = 'none';
+  } else {
+    themeToggleDarkIcon.style.display = 'inline-block';
+    themeToggleLightIcon.style.display = 'none';
+  }
+
+  var themeToggleBtn = document.getElementById('theme-toggle');
+
+  themeToggleBtn.addEventListener('click', function () {
+
+    
+    themeToggleDarkIcon.style.display = themeToggleDarkIcon.style.display === 'none' ? 'inline-block' : 'none';
+    themeToggleLightIcon.style.display = themeToggleLightIcon.style.display === 'none' ? 'inline-block' : 'none';
+
+    
+    if (localStorage.getItem('color-theme')) {
+      if (localStorage.getItem('color-theme') === 'light') {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      }
+
+      
+    } else {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      }
+    }
+
+  });
+</script><main class="flex-1 grow mx-auto w-screen max-w-screen-2xl pt-4">
+<main class="justify-self-center mx-auto">
+    <div class="md:grid md:grid-cols-2">
+        <div id="left" class="font-sans" style="background-color: #7359f6">
+            <div class="sticky top-0 py-8 mx-auto px-8 prose-lg prose-p:font-sans dark:prose-invert">
+                <h1 class="font-medium text-5xl mb-0">Horizon</h1>
+                
+                
+                    <img src="/work/Horizon/images/horizon_hero.png" alt="Left Column Image" class="mb-0">
+                
+
+                <h2 class="mt-1">A card game about the future of inclusive fashion.</h2>
+
+                <div class="pt-6 lg:grid lg:grid-cols-5 lg:gap-4">
+                    <div class="timeline col-span-1">
+                        <p class="underline mb-0">Timeline</p>
+                        <p class="mt-0">8 Weeks</p>
+                    </div>
+                    <div class="role col-span-2">
+                        <p class="underline mb-0">Role</p>
+                        <p class="mt-0">Research, game design, video editing, UX design in a team of 3.</p>
+                    </div>
+                    <div class="tools col-span-2">
+                        <p class="underline mb-0">Tools</p>
+                        <p class="mt-0">Figma, Fusion360, Adobe Illustrator, laser cutter</p>
+                    </div>
+                </div>
+                <p class="text-zinc-700 text-sm">Last updated on: May 28, 2023</p>
+                
+            </div>
+        </div>
+        <div id="right" >
+            <div class="py-8 px-4 prose prose-p:text-xl light:prose-p:text-zinc-900 prose-headings:font-medium max-w-prose dark:prose-invert">
+                <h1 id="designing-for-inclusion-and-sustainability">Designing for Inclusion and Sustainability</h1>
+<h2 id="project-brief">Project Brief</h2>
+<p>A product of my first-year studio course in my Master of Design Engineering program, &ldquo;Horizon&rdquo; was a collaborative effort among a team of three: myself, Kamila Czachorowski and Ghalya Alsanea. The project revolved around the intersection of fashion, textiles, and sustainability, aiming to re-imagine how apparel corporations approach design, particularly for gender non-conforming people.</p>
+<p><strong>The central ambition was to catalyze a more inclusive design approach, catering to gender-non-conforming consumers whose voices often remain marginalized in mainstream fashion.</strong></p>
+<h2 id="our-8-week-process">Our 8-Week Process</h2>
+<h3 id="interviewing-fashion-insiders">Interviewing Fashion Insiders</h3>
+<p><img src="/work/Horizon/images/research.png" alt="a screenshot of a miro board depicting a diagram of research">
+Our process commenced with a deep dive into the realm of apparel design, spanning from conversations with multinational corporations like J. Crew to boutique establishments specializing in inclusive fashion. We sought to understand how apparel designers approached designing at the margins and particularly attempted to understand why companies were still failing a wide array of customers today. Interviews and conversations with designers across this spectrum helped us understand where we could pull the lever to improve inclusiveness in fashion today.</p>
+<h3 id="developing-a-new-paradigm">Developing a New Paradigm</h3>
+<p>Informed by our research, we explored change-making methodologies, studying influential manifestos and engaging in diverse exercises. This phase broadened our understanding and honed our approach.</p>
+<p><img src="/work/Horizon/images/values.png" alt="a screenshot depicting the group&rsquo;s values"></p>
+<p>Ultimately, we realized that in order to change fashion for the better we needed to articulate a framework that would allow companies to assess where they were succeeding and where they were failing.</p>
+<p><strong>We needed to articulate values we thought would drive the future of inclusive fashion.</strong></p>
+<h2 id="changing-minds-through-game-play">Changing Minds Through Game Play</h2>
+<p><img src="/work/Horizon/images/TOC.png" alt="a graphic depicting theory of change">
+The concept of a game emerged as a potent catalyst for change within corporate settings. This game would encourage self-assessment of values, offering a means for individuals at apparel companies to critically evaluate their practices in sustainable and inclusive fashion design. We found a game would provide an interactive and fun, yet still valuable way to start enacting change at an organizational level.</p>
+<h3 id="crafting-the-game">Crafting the Game</h3>
+<p><img src="/work/Horizon/images/game_draft.png" alt="a first draft of cards designed for the game"></p>
+<figcaption class="m-0">A first draft of cards we designed based on a popular speculative card game called Peek.</figcaption>
+<p>To design the game, we ventured into the realm of game design principles, particularly studying speculative games that pushed players to imagine a different future. The result was a roleplaying card game that asked players to step into new roles at an imagining company, New Horizons Apparel, and work together to negotiate cost, consumer preference and the ultimate goal of creating fashion for all.</p>
+<h3 id="iteration-iteration-iteration">Iteration, Iteration, Iteration</h3>
+<p><img src="/work/Horizon/images/gameday.png" alt="a group of people sit playing the game around a coffee table"></p>
+<p>After creating a concept and rules for our game we produced physical cards and components and hosted game playing sessions to get user feedback. We worked to iterate on the game mechanics to make the game more engaging, fun and effective.</p>
+<h2 id="the-final-outcome">The Final Outcome</h2>
+<h3 id="the-game-fostering-conversations">The Game: Fostering Conversations</h3>
+<img width="50%" src="/work/Horizon/images/cards.gif">
+<p>The project&rsquo;s culmination materialized in two vital components. First, the roleplaying card game, serving as a platform for corporations to introspect on their design practices, align them with sustainable and inclusive values, and unearth avenues for growth.</p>
+<p>Lasting about 1 hour the game asks people to step into new roles like the CEO of an apparel company or the dad of a gender non-conforming child. Throughout the game they work to design a new apparel product and balance the constraints of budgeting and consumer preference. Ultimately, they&rsquo;ll engage in conversation around where tradeoffs can be made and what being truly inclusive means.</p>
+<h3 id="the-companion-app-knowledge-empowerment">The Companion App: Knowledge Empowerment</h3>
+<p><img src="/work/Horizon/images/app.png" alt="Companion App"></p>
+<p>Complementing the game, the companion app was an served as another resource for companies engaging in the exercise. It equipped users with an immersive learning experience, delving deeper into inclusive and sustainable design practices and <strong>providing teams tangible ways to take what they learn in the game and apply it to their work.</strong></p>
+<h2 id="how-to-play">How To Play</h2>
+<video controls>
+  <source src="/work/Horizon/images/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<h2 id="lessons-and-future-visions">Lessons and Future Visions</h2>
+<p>This project was one of many &ldquo;firsts&rdquo; for me. I had never designed a game or worked on a project centered so strongly on behavior change. While I don&rsquo;t think Horizon is necessarily the way the fashion world will transform to become more inclusive the exercise of design provided an opportunity to engage with difficult and important questions and pushed me to think critically about the role of design in change making.</p>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+    </main><footer class="bottom-0 w-full p-3 mt-3 text-center  border-t border-zinc-200 dark:border-zinc-700">
+    <div class="text-zinc-600 text-md">
+        <a href="https://linkedin.com/in/abigail-swallow" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Exit to view Abigail's LinkedIn page"><i
+                class="fa-brands fa-linkedin fa-lg"></i></a>
+        <a href="mailto:abigail.r.swallow@gmail.com" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Send an email to Abigail"><i
+                class="fa-solid fa-envelope fa-lg"></i></a>
+        <a href="https://github.com/abigailswallow" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Exit to view Abigail's github page"><i
+                class="fa-brands fa-github fa-lg"></i></a>
+    </div>
+
+    <div class="mt-3 text-zinc-400 text-xs">
+        <p>coded by moi with <a href="https://gohugo.io" class="underline hover:text-fuchsia-600" aria-label="Hugo">Hugo</a> and <a
+                href="https://tailwindcss.com" class="underline hover:text-sky-400" aria-label="TailwindCSS">TailwindCSS</a></p>
+        <p class="copyright">&copy; 2022-2023 Abigail Swallow. All rights reserved. </p>
+    </div>
+</footer><script src="https://kit.fontawesome.com/4b71c30471.js" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

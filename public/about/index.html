@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin>
+    <link rel="preload" href="https://p.typekit.net" crossorigin>
+    
+    <link rel="icon" href="imgs/favicons/favicon.ico" sizes="any">
+    <link rel="icon" href="imgs/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="imgs/favicons/apple-touch-icon.png">
+
+    
+    <link rel="stylesheet" href="https://use.typekit.net/jdl0pek.css">
+
+    <title>About - Abigail Swallow</title><meta name="generator" content="Hugo 0.117.0">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+
+    <script>
+        
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+</head>
+
+<body class="flex flex-col min-h-screen bg-zinc-50 dark:bg-black text-zinc-950 dark:text-zinc-200"><header>
+  <nav class="flex items-center justify-between p-4 text-md">
+
+    <a href="/" class="font-medium text-lg" aria-label="Abigail Swallow">Abigail Swallow</a>
+
+    <div class="">
+      <a href="/about" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="About">About</a>
+      <a href="/work" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="Work">Work</a>
+      <a href="/playground" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="Playground">Playground</a>
+      <button id="theme-toggle" aria-label="Dark mode" type="button"
+        class="ml-2 text-zinc-600 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700 focus:outline-none focus:ring-4 focus:ring-zinc-200 dark:focus:ring-zinc-700 rounded-lg text-sm p-2.5">
+        <i id="theme-toggle-dark-icon" class="w-5 h-5 fa-solid fa-moon" fill="currentColor"></i>
+        <i id="theme-toggle-light-icon" class="w-5 h-5 fa-solid fa-sun" fill="currentColor"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<script>
+  var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+  var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+  
+  if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon.style.display = 'inline-block';
+    themeToggleDarkIcon.style.display = 'none';
+  } else {
+    themeToggleDarkIcon.style.display = 'inline-block';
+    themeToggleLightIcon.style.display = 'none';
+  }
+
+  var themeToggleBtn = document.getElementById('theme-toggle');
+
+  themeToggleBtn.addEventListener('click', function () {
+
+    
+    themeToggleDarkIcon.style.display = themeToggleDarkIcon.style.display === 'none' ? 'inline-block' : 'none';
+    themeToggleLightIcon.style.display = themeToggleLightIcon.style.display === 'none' ? 'inline-block' : 'none';
+
+    
+    if (localStorage.getItem('color-theme')) {
+      if (localStorage.getItem('color-theme') === 'light') {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      }
+
+      
+    } else {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      }
+    }
+
+  });
+</script><main class="flex-1 grow mx-auto w-screen max-w-screen-2xl pt-4">
+<main
+    class="justify-self-center mx-auto px-6 mb-16 sm:px-4 md:px-0 prose dark:prose-invert prose-zinc lg:prose-lg">
+
+    <h1 class="font-medium">About</h1>
+    <p>A little bit about who I am, what I do and why. Visit my now page for more about what I&rsquo;ve been up to to recently.</p>
+<h3 id="im-an-optimistic-problem-solver">I&rsquo;m an optimistic problem solver:</h3>
+<div class="grid grid-cols-2 gap-4">
+    <div class="col-span-1">
+        <img src="/imgs/chessy.jpeg" alt="Abigail standing in front of a waterfall"><figcaption>Working on a chess playing robot with my friend, Allison Karp.</figcaption>
+    </div>
+    <div class="col-span-1">
+        <p>Whether it's a tricky math problem or a grander societal issue, what motivates me is getting stuck in sticky problems.</p> <p>This love led me first to study Social Policy at Northwestern University where I learned how to adopt a 10,000 foot view to solve problems at a large scale.</p><p>While I loved working on issues I am deeply passionate about, I wanted to work on problems in a more tangible way. This led me to <a src="https://mde.harvard.edu">Harvard's Master of Design Engineering program</a> where I'm currently completing my final year.</p>
+    </div>
+</div>
+
+<h3 id="i-dont-like-the-word-generalist-but-i-am-one">I don&rsquo;t like the word generalist, but I am one:</h3>
+<p>I believe solving important issues will almost always require a multidisciplinary approach. <strong>Learning about famous inventors, thinkers and designers teaches me that the most impactful solutions come from outside disciplinary bounds. Plus, I&rsquo;m insatiably curious.</strong></p>
+<p>As a result, I&rsquo;ve sought to develop skill sets across disciplines with the goal of being a well-rounded thinker, someone that can connect the dots to problem-solve effectively. Tangibly this means I&rsquo;ve worked to hone my skills in computer science, computational design and Theory of Change methodologies. Today, I continue following paths I&rsquo;m curious about and expanding my knowledge so I can continue becoming a more effective designer. Some would say that makes me a generalist.</p>
+<h3 id="im-a-doer">I&rsquo;m a doer:</h3>
+<p><img src="/imgs/banff.jpeg" alt="in front of a lake in Banff"></p>
+<figcaption>In front of Lake Louise in Banff, Canada before a rainy hike.</figcaption>
+<p>Growing up in Seattle, WA instilled in me a love for activity, especially in the beautiful places surrounding the PNW. But I also love exploring urban life, museums and local haunts. For the past 10 years I trained as a competitive fencer and as my college career has wound down, I&rsquo;m now enjoying the opportunity to connect with long neglected hobbies of mine like playing musical instruments and climbing.</p>
+<p>I try to be action oriented in my work and in my personal life and I&rsquo;m always open to new opportunities and adventures. If that resonates, <a href="mailto:abigail.r.swallow@gmail.com">please reach out</a>, I&rsquo;d love to meet you.</p>
+
+    <p class="text-zinc-400 dark:text-zinc-200 mt-3">Last Updated: August 25, 2023</p>
+
+
+
+</main>
+
+    </main><footer class="bottom-0 w-full p-3 mt-3 text-center  border-t border-zinc-200 dark:border-zinc-700">
+    <div class="text-zinc-600 text-md">
+        <a href="https://linkedin.com/in/abigail-swallow" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Exit to view Abigail's LinkedIn page"><i
+                class="fa-brands fa-linkedin fa-lg"></i></a>
+        <a href="mailto:abigail.r.swallow@gmail.com" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Send an email to Abigail"><i
+                class="fa-solid fa-envelope fa-lg"></i></a>
+        <a href="https://github.com/abigailswallow" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Exit to view Abigail's github page"><i
+                class="fa-brands fa-github fa-lg"></i></a>
+    </div>
+
+    <div class="mt-3 text-zinc-400 text-xs">
+        <p>coded by moi with <a href="https://gohugo.io" class="underline hover:text-fuchsia-600" aria-label="Hugo">Hugo</a> and <a
+                href="https://tailwindcss.com" class="underline hover:text-sky-400" aria-label="TailwindCSS">TailwindCSS</a></p>
+        <p class="copyright">&copy; 2022-2023 Abigail Swallow. All rights reserved. </p>
+    </div>
+</footer><script src="https://kit.fontawesome.com/4b71c30471.js" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

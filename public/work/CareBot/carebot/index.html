@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin>
+    <link rel="preload" href="https://p.typekit.net" crossorigin>
+    
+    <link rel="icon" href="imgs/favicons/favicon.ico" sizes="any">
+    <link rel="icon" href="imgs/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="imgs/favicons/apple-touch-icon.png">
+
+    
+    <link rel="stylesheet" href="https://use.typekit.net/jdl0pek.css">
+
+    <title>Carebot - Abigail Swallow</title>
+    <meta name="description" content="A friendly healthcare device for aging adults." />
+    <meta name="generator" content="Hugo 0.117.0">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+
+    <script>
+        
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+</head>
+
+<body class="flex flex-col min-h-screen bg-zinc-50 dark:bg-black text-zinc-950 dark:text-zinc-200"><header>
+  <nav class="flex items-center justify-between p-4 text-md">
+
+    <a href="/" class="font-medium text-lg" aria-label="Abigail Swallow">Abigail Swallow</a>
+
+    <div class="">
+      <a href="/about" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="About">About</a>
+      <a href="/work" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="Work">Work</a>
+      <a href="/playground" class="ml-4 hover:text-accent transition ease-in-out duration-150" aria-label="Playground">Playground</a>
+      <button id="theme-toggle" aria-label="Dark mode" type="button"
+        class="ml-2 text-zinc-600 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700 focus:outline-none focus:ring-4 focus:ring-zinc-200 dark:focus:ring-zinc-700 rounded-lg text-sm p-2.5">
+        <i id="theme-toggle-dark-icon" class="w-5 h-5 fa-solid fa-moon" fill="currentColor"></i>
+        <i id="theme-toggle-light-icon" class="w-5 h-5 fa-solid fa-sun" fill="currentColor"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<script>
+  var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+  var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+  
+  if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon.style.display = 'inline-block';
+    themeToggleDarkIcon.style.display = 'none';
+  } else {
+    themeToggleDarkIcon.style.display = 'inline-block';
+    themeToggleLightIcon.style.display = 'none';
+  }
+
+  var themeToggleBtn = document.getElementById('theme-toggle');
+
+  themeToggleBtn.addEventListener('click', function () {
+
+    
+    themeToggleDarkIcon.style.display = themeToggleDarkIcon.style.display === 'none' ? 'inline-block' : 'none';
+    themeToggleLightIcon.style.display = themeToggleLightIcon.style.display === 'none' ? 'inline-block' : 'none';
+
+    
+    if (localStorage.getItem('color-theme')) {
+      if (localStorage.getItem('color-theme') === 'light') {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      }
+
+      
+    } else {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      }
+    }
+
+  });
+</script><main class="flex-1 grow mx-auto w-screen max-w-screen-2xl pt-4">
+<main class="justify-self-center mx-auto">
+    <div class="md:grid md:grid-cols-2">
+        <div id="left" class="font-sans" style="background-color: #1a88a1">
+            <div class="sticky top-0 py-8 mx-auto px-8 prose-lg prose-p:font-sans dark:prose-invert">
+                <h1 class="font-medium text-5xl mb-0">Carebot</h1>
+                
+                
+                    <img src="/work/CareBot/images/c_carebot_hero.png" alt="Left Column Image" class="mb-0">
+                
+
+                <h2 class="mt-1">A friendly healthcare device for aging adults.</h2>
+
+                <div class="pt-6 lg:grid lg:grid-cols-5 lg:gap-4">
+                    <div class="timeline col-span-1">
+                        <p class="underline mb-0">Timeline</p>
+                        <p class="mt-0">8 Weeks</p>
+                    </div>
+                    <div class="role col-span-2">
+                        <p class="underline mb-0">Role</p>
+                        <p class="mt-0">Solo project</p>
+                    </div>
+                    <div class="tools col-span-2">
+                        <p class="underline mb-0">Tools</p>
+                        <p class="mt-0">SolidWorks, Keyshot, Pink foam</p>
+                    </div>
+                </div>
+                <p class="text-zinc-700 text-sm">Last updated on: April 8, 2022</p>
+                
+            </div>
+        </div>
+        <div id="right" >
+            <div class="py-8 px-4 prose prose-p:text-xl light:prose-p:text-zinc-900 prose-headings:font-medium max-w-prose dark:prose-invert">
+                <h1 id="aging-in-grace">&ldquo;Aging in Grace&rdquo;</h1>
+<p><img src="/work/CareBot/images/annie.jpeg" alt="Picture of my grandmother"></p>
+<p>Inspired by my grandmother Annie, Carbot&rsquo;s aim is to empower aging adults by facilitating medication management and fostering connections with their care team and community. While it&rsquo;s a healthcare device in terms of functionality, at its core it&rsquo;s about providing autonomy and connection to adults seeking to age in place.</p>
+<p>What began as a 1-week design sprint with the brief, <strong>&ldquo;Identify a need and design a robot to solve that need&rdquo;</strong> ended as a personal project. Carebot took shape over a tight 4-week timeline. A subsequent iteration followed 6 months later, consuming an additional 2 weeks. The project&rsquo;s primary goal wasn&rsquo;t the creation of functioning prototypes but rather the validation of a the concept.</p>
+<h1 id="the-challenge">The Challenge</h1>
+<h2 id="how-might-we-reduce-social-isolation-and-provide-basic-care-for-older-adults-who-live-alone">How might we reduce social isolation and provide basic care for older adults who live alone?</h2>
+<p><img src="/work/CareBot/images/stat.png" alt="graphic about social isolation"></p>
+<p>The risks of social isolation are broad and significant. I was motivated by the idea that a device like Carebot could function as a communication device for people with low technological engagement. While a smartphone works for some aging adults, <strong>a simplified device that served as a care hub could empower other users to connect with family and friends more easily.</strong></p>
+<h1 id="generative-research--discovery">Generative Research &amp; Discovery</h1>
+<h3 id="discovering-the-daily-needs-and-wants-of-older-adults-and-their-families">Discovering the daily needs and wants of older adults and their families.</h3>
+<p><img src="/work/CareBot/images/research.png" alt="graphic showing the research process"></p>
+<p>I first conducted secondary research to understand the landscape of accessible products for aging in place. Then, I conducted user-interviews with my grandmother and her friends to understand the primary concerns of the user base.</p>
+<h1 id="ideation-and-concept-development">Ideation and Concept Development</h1>
+<p><img src="/work/CareBot/images/CareBotIdeation.png" alt="sketches"></p>
+<p>I jumped into the ideation stage with a clear idea of what I wanted to achieve through this project. <strong>The insights I generated from my research, guided the ideation phase.</strong> I generated ideas by sketching (physical and digital)</p>
+<p><img src="/work/CareBot/images/ModelingAction.JPG" alt="Abigail works on creating a foam prototype"></p>
+<p>Leveraging the insights gleaned, I attempted to craft a device form that felt both functional and familiar. After creating a final sketch render, foam prototyping facilitated tangible interactions and iterative feedback loops with users.</p>
+<h2 id="testing-with-authentic-users">Testing with Authentic Users</h2>
+<p>The form&rsquo;s physical foam prototype was used to conduct testing among potential users. This iterative process served as a crucial bridge between concept and tangible design.</p>
+<p>Translating insights into actionable designs, I employed Keyshot and Solidworks to illustrate the envisioned device&rsquo;s form and functionality.</p>
+<h1 id="how-it-works">How It Works</h1>
+<img width="50%" src="/work/CareBot/images/step1.png">
+<h2 id="1-medication-management">1. Medication Management</h2>
+<p>Carebot manages a person’s medication by scanning the Rx label, holding the medication and dispensing it at the right time in the correct dosage.</p>
+<img width="50%" src="/work/CareBot/images/step3.png">
+<h2 id="2-access-to-emergency-services">2. Access to Emergency Services</h2>
+<p>Carebot can call for help in an emergency. Help can be called by pressing a button or by clicking a portable version of the button that can be worn around one’s neck.</p>
+<img width="50%" src="/work/CareBot/images/step2.png">
+<h2 id="3-communication">3. Communication</h2>
+<p>Carebot also serves as a communication device modeled after Amazon Echo’s “drop-in” feature where a call automatically connects instead of ringing. <strong>Family and friends can easily start audio conversations to check in on their loved ones.</strong></p>
+<h1 id="personal-reflections">Personal Reflections</h1>
+<p><img src="/work/CareBot/images/finalrender.png" alt="product rendering"></p>
+<p>Carebot&rsquo;s genesis was deeply personal, originating from the desire to enhance the well-being of my grandmother and others facing similar challenges. For me, this project ignited an ongoing interest in designing for aging adults and underscored the importance of using design to empower those in need.</p>
+<p>Carebot can provide for many of the basic needs of older adults but in many ways this project ended up being for those who love older adults. Children and grandchildren of older adults can be comforted knowing that there is something
+there to manage medication, connect with emergency services, and communicate with others.</p>
+<p>As I continue on my design journey, the experience of envisioning Carebot reinforces my commitment to crafting meaningful solutions that help people connect and thrive in a challenging environments.</p>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+    </main><footer class="bottom-0 w-full p-3 mt-3 text-center  border-t border-zinc-200 dark:border-zinc-700">
+    <div class="text-zinc-600 text-md">
+        <a href="https://linkedin.com/in/abigail-swallow" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Exit to view Abigail's LinkedIn page"><i
+                class="fa-brands fa-linkedin fa-lg"></i></a>
+        <a href="mailto:abigail.r.swallow@gmail.com" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Send an email to Abigail"><i
+                class="fa-solid fa-envelope fa-lg"></i></a>
+        <a href="https://github.com/abigailswallow" class="hover:text-zinc-900 dark:hover:text-zinc-300 px-1" aria-label="Exit to view Abigail's github page"><i
+                class="fa-brands fa-github fa-lg"></i></a>
+    </div>
+
+    <div class="mt-3 text-zinc-400 text-xs">
+        <p>coded by moi with <a href="https://gohugo.io" class="underline hover:text-fuchsia-600" aria-label="Hugo">Hugo</a> and <a
+                href="https://tailwindcss.com" class="underline hover:text-sky-400" aria-label="TailwindCSS">TailwindCSS</a></p>
+        <p class="copyright">&copy; 2022-2023 Abigail Swallow. All rights reserved. </p>
+    </div>
+</footer><script src="https://kit.fontawesome.com/4b71c30471.js" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

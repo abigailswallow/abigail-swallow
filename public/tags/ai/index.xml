@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on Abigail Swallow</title>
+    <link>http://example.org/tags/ai/</link>
+    <description>Recent content in AI on Abigail Swallow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2022-{year} Abigail Swallow. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 25 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>synThread</title>
+      <link>http://example.org/work/synthread/synthread/</link>
+      <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/work/synthread/synthread/</guid>
+      <description>The Process Our Vision Create a dynamic data visualization web-app merging music and textiles, transforming Spotify listening history into personalized fabric patterns.
+The Challenge synThread is a dynamic data visualization web-app that seamlessly merges the realms of music and textiles. Developed as part of the Master of Design Engineering&amp;rsquo;s first-year studio course, the project was a collaborative effort among a team of three, including myself, Gail Alderson and Sophie Leamon. Our challenge was to craft an innovative data visualization concept centered around textiles, culminating in the creation of a personalized fabric design generated from a user&amp;rsquo;s Spotify listening history.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Industrial-Design on Abigail Swallow</title>
+    <link>http://example.org/tags/industrial-design/</link>
+    <description>Recent content in Industrial-Design on Abigail Swallow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2022-{year} Abigail Swallow. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/industrial-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Carebot</title>
+      <link>http://example.org/work/carebot/carebot/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/work/carebot/carebot/</guid>
+      <description>&amp;ldquo;Aging in Grace&amp;rdquo; Inspired by my grandmother Annie, Carbot&amp;rsquo;s aim is to empower aging adults by facilitating medication management and fostering connections with their care team and community. While it&amp;rsquo;s a healthcare device in terms of functionality, at its core it&amp;rsquo;s about providing autonomy and connection to adults seeking to age in place.
+What began as a 1-week design sprint with the brief, &amp;ldquo;Identify a need and design a robot to solve that need&amp;rdquo; ended as a personal project.</description>
+    </item>
+    
+  </channel>
+</rss>
