@@ -1,4 +1,4 @@
-baseURL = 'https://abigailswallow.github.io/'
+baseURL = 'https://abigailswallow.com/'
 languageCode = 'en-us'
 title = 'Abigail Swallow'
 theme = "tailwind"
