@@ -2,6 +2,16 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{ partial "head.html" . }}
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HCY83XX0HB"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-HCY83XX0HB');
+</script>
+
 <body class="flex flex-col min-h-screen bg-zinc-50 dark:bg-black text-zinc-950 dark:text-zinc-200">
     {{- partial "dev/dev-tools.html" . -}}
     {{- partial "header.html" . -}}
