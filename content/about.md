@@ -4,7 +4,15 @@ unlisted: true
 date: "2023-08-25T00:00:00"
 ---
 
-A little bit about who I am, what I do and why. Visit my now page for more about what I've been up to to recently.
+A little bit about who I am, what I do and why. Visit my [now](https://abigailswallow.com/now/) page for more about what I've been up to to recently.
+
+## The Quick Version
+
+I'm a current Master of Design Engineering student at Harvard University, interested in using multidisciplinary design methods to tackle important problems. Previously, I studied Social Policy at Northwestern University, knowledge I find incredibly relevant to design. Originally, I'm from Seattle, WA but am presently based in Cambridge, MA. In the future, I would like to work in a multidisciplinary, design-centric environment working on issues I care about. 
+
+Please don't hesitate to [reach out](mailto:abigail.r.swallow@gmail.com).
+
+## The Long Version
 
 ### I'm an optimistic problem solver:
 
