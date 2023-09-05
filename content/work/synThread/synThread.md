@@ -22,7 +22,7 @@ home: true
 Create a dynamic data visualization web-app merging music and textiles, transforming Spotify listening history into personalized fabric patterns.
 
 ## The Challenge
-synThread is a dynamic data visualization web-app that seamlessly merges the realms of music and textiles. Developed as part of the [Master of Design Engineering's](https://mde.harvard.edu/) first-year studio course, the project was a collaborative effort among a team of three, including myself, Gail Alderson and Sophie Leamon. Our challenge was to craft an innovative data visualization concept centered around textiles, culminating in the creation of a personalized fabric design generated from a user's Spotify listening history.
+synThread is a dynamic data visualization web-app that seamlessly merges the realms of music and textiles. Developed as part of the [Master of Design Engineering's](https://mde.harvard.edu/) first-year studio course, the project was a collaborative effort among a team of three, including myself, [Gail Alderson](http://Gailalderson.com) and Sophie Leamon. Our challenge was to craft an innovative data visualization concept centered around textiles, culminating in the creation of a personalized fabric design generated from a user's Spotify listening history.
 
 ## Our Process
 ### Music Theory Research

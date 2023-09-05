@@ -19,7 +19,7 @@ home: true
 # Designing for Inclusion and Sustainability
 
 ## Project Brief
-A product of my first-year studio course in my Master of Design Engineering program, "Horizon" was a collaborative effort among a team of three: myself, Kamila Czachorowski and Ghalya Alsanea. The project revolved around the intersection of fashion, textiles, and sustainability, aiming to re-imagine how apparel corporations approach design, particularly for gender non-conforming people.
+A product of my first-year studio course in my Master of Design Engineering program, "Horizon" was a collaborative effort among a team of three: myself, [Kamila Czachorowski](http://kamilaczachorowski.com/) and [Ghalya Alsanea](http://www.ghalya.design/). The project revolved around the intersection of fashion, textiles, and sustainability, aiming to re-imagine how apparel corporations approach design, particularly for gender non-conforming people.
 
 **The central ambition was to catalyze a more inclusive design approach, catering to gender-non-conforming consumers whose voices often remain marginalized in mainstream fashion.**
 

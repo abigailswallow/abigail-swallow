@@ -20,7 +20,7 @@ home: true
 
 ![Picture of my grandmother](/work/CareBot/images/annie.jpeg)
 
-Inspired by my grandmother Annie, Carbot's aim is to empower aging adults by facilitating medication management and fostering connections with their care team and community. While it's a healthcare device in terms of functionality, at its core it's about providing autonomy and connection to adults seeking to age in place. 
+Inspired by my grandmother Annie, Carebot's aim is to empower aging adults by facilitating medication management and fostering connections with their care team and community. While it's a healthcare device in terms of functionality, at its core it's about providing autonomy and connection to adults seeking to age in place. 
 
 What began as a 1-week design sprint with the brief, **"Identify a need and design a robot to solve that need"** ended as a personal project. Carebot took shape over a tight 4-week timeline. A subsequent iteration followed 6 months later, consuming an additional 2 weeks. The project's primary goal wasn't the creation of functioning prototypes but rather the validation of a the concept.
 
