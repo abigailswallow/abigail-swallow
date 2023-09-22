@@ -1,39 +1,47 @@
 {{ define "main" }}
 <main class="justify-self-center mx-auto">
     <div class="md:grid md:grid-cols-2">
-        <div id="left" class="font-sans" style="background-color: {{ .Params.leftBackgroundColor }}">
-            <div class="sticky top-0 py-8 mx-auto px-8 prose-lg prose-p:font-sans dark:prose-invert">
-                <h1 class="font-medium text-5xl mb-0">{{ .Title }}</h1>
-                <!-- Render left column image -->
-                {{ with .Params.leftImage }}
+        {{/* <div id="left" class="border-r-2 m-2" style="border-color: {{ .Params.leftBackgroundColor }}"> */}}
+            <div id="left" class="border-r border-black dark:border-white prose-lg dark:prose-invert m-2">
+                <div class="sticky top-0 py-8 mx-auto px-8 ">
+                    <h1 class="font-bold text-6xl mb-0">{{ .Title }}</h1>
+                    <h2 class="mt-3 text-xl">{{ .Params.description }}</h2>
+                    <!-- Render left column image -->
+                    {{ with .Params.leftImage }}
                     <img src="{{ . }}" alt="Left Column Image" class="mb-0">
-                {{ end }}
+                    {{ end }}
 
-                <h2 class="mt-1">{{ .Params.description }}</h2>
+                    <div class="pt-2 lg:grid lg:grid-cols-5 lg:gap-6 text-base">
+                        <div class="timeline col-span-1">
+                            <p class="underline mb-0">Timeline</p>
+                            <p class="mt-0 font-mono uppercase text-sm text-indigo-500">{{ .Params.timeline }}</p>
+                        </div>
+                        <div class="role col-span-2">
+                            <p class="underline mb-0">Role</p>
+                            <p class="mt-0 font-mono uppercase text-sm text-indigo-500">{{ .Params.role }}</p>
+                        </div>
+                        <div class="tools col-span-2">
+                            <p class="underline mb-0">Tools</p>
+                            <p class="mt-0 font-mono uppercase text-sm text-indigo-500">{{ .Params.tools }}</p>
+                        </div>
+                    </div>
 
-                <div class="pt-6 lg:grid lg:grid-cols-5 lg:gap-4">
-                    <div class="timeline col-span-1">
-                        <p class="underline mb-0">Timeline</p>
-                        <p class="mt-0">{{ .Params.timeline }}</p>
-                    </div>
-                    <div class="role col-span-2">
-                        <p class="underline mb-0">Role</p>
-                        <p class="mt-0">{{ .Params.role }}</p>
-                    </div>
-                    <div class="tools col-span-2">
-                        <p class="underline mb-0">Tools</p>
-                        <p class="mt-0">{{ .Params.tools }}</p>
-                    </div>
+
                 </div>
-                <p class="text-zinc-700 text-sm">Last updated on: {{ .Date.Format "January 2, 2006" }}</p>
-                
+            </div>
+            <div id="right">
+                <div
+                    class="py-8 px-4 prose prose-p:text-xl light:prose-p:text-zinc-900 prose-headings:font-medium max-w-prose dark:prose-invert prose-p:font-serif prose-p:leading-snug">
+                    {{ .Content }}
+         
+                    <div class="not-prose">
+                        <p class="text-zinc-700 text-sm dark:text-zinc-200 mt-2">Last updated on: {{ .Date.Format
+                            "January 2, 2006"
+                            }}</p>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div id="right" >
-            <div class="py-8 px-4 prose prose-p:text-xl light:prose-p:text-zinc-900 prose-headings:font-medium max-w-prose dark:prose-invert">
-                {{ .Content }}
-            </div>
-        </div>
-    </div>
 </main>
 {{ end }}

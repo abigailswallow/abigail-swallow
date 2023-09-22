@@ -3,29 +3,25 @@
 <div class="mx-auto lg:px-8 px-4">
     <div class="">
         {{/* <p class="pb-3 font-sans text-2xl">Abigail Swallow</p> */}}
-        <h1 class="text-4xl font-medium mt-6 mb-8 lg:w-2/3"> Optimistic design-engineer using
-            <span class="font-serif italic font-normal">systems-thinking</span> to solve
-            <a href="#sticky"
-                class="font-serif italic font-normal underline hover:text-accent transition ease-in-out duration-150" aria-label="sticky problems.*">sticky
-                problems.*</a>
+        <h1 class="text-6xl font-bold mt-6 mb-8 lg:w-2/3 leading-none"> Optimistic design-engineer using emerging technology to solve complex problems.
         </h1>
     </div>
 
-    <hr class="border-4 border-black dark:border-zinc-200 mb-10">
+    <hr class="border-1 border-black dark:border-zinc-200 mb-10">
 
 
-    <h2 class="font-medium text-xl">Selected Work</h2>
+    <h2 class="text-4xl font-semibold font-mono uppercase tracking-wide">Selected Work</h2>
 
     {{- partial "grid.html" . -}}
 
     {{ .Content }}
 
-    <hr class="border-4 border-black dark:border-zinc-200 my-10">
+    <hr class="border-1 border-black dark:border-zinc-200 my-10">
 
     <div class="about lg:w-2/3 lg:grid lg:grid-cols-4 gap-8">
 
 
-        <h2 class="font-medium text-xl">About Me</h2>
+        <h2 class="text-4xl font-semibold font-mono uppercase tracking-wide">About</h2>
 
 
         <div class="py-4">
@@ -33,7 +29,7 @@
         </div>
 
         <div class="col-span-2 py-4">
-            <p class="mb-8 text-xl">
+            <p class="mb-8 text-xl leading-snug">
                 I'm a current student in Harvard University’s Masters of Design Engineering program, with a background
                 in
                 Social Policy. I am passionate about leveraging emerging technologies to bring about change in a variety
@@ -45,17 +41,11 @@
                 applying my skills to challenging problems.
             </p>
 
-            <a class="underline underline-offset-2 hover:text-accent transition ease-in-out duration-150" href="/about" aria-label="Learn More">Learn More</a>
+            <a class="underline underline-offset-2 hover:text-accent transition ease-in-out duration-150" href="/about"
+                aria-label="Learn More">Learn More</a>
         </div>
 
     </div>
-
-    <div class="mt-8" id="sticky">
-        <p class="underline">*Or, in other words: wicked, systemic, intractable, entangled, ambiguous, etc.</p>
-    </div>
-
-
-
 </div>
 
 {{ end }}

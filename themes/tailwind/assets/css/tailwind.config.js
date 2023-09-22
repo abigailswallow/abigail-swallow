@@ -9,15 +9,26 @@ module.exports = {
     "./content/**/*.html"
   ],
   theme: {
+    fontSize: {
+      xs: '0.686rem',
+      sm: '0.812rem',
+      base: '1rem',
+      xl: '1.188rem',
+      '2xl': '1.438rem',
+      '3xl': '1.750rem',
+      '4xl': '2.062rem',
+      '5xl': '2.500rem',
+      '6xl': '3rem',
+    },
     extend: {
       colors: {
         accent: '#12685E', // Your custom accent color
         accent_dark: '#22BFAC',
       },
       fontFamily: {
-        'sans': ['neue-haas-unica', 'ui-sans-serif', 'system-ui'],
-        'serif': ['warnock-pro', 'ui-serif', 'Georgia'],
-        'mono': ['ui-monospace', 'SFMono-Regular'],
+        'sans': ['Archivo', 'ui-sans-serif', 'system-ui'],
+        'serif': ['utopia-std', 'ui-serif', 'Times'],
+        'mono': ['JetBrains Mono', 'SFMono-Regular'],
       },
     },
   },

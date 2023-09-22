@@ -5,33 +5,6 @@
 @tailwind utilities;
 @tailwind variants;
 
-
-@font-face {
-  font-family: 'Inter';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-  src: url('/static/fonts/inter.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'newsreader';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-  src: url('/static/fonts/newsreader.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'newsreader';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: italic;
-  src: url('/static/fonts/newsreader-italic.ttf') format('truetype');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
-
 /* Site Specific */
 /* put site specific css styles here using the @layer directive */
 /* see https://tailwindcss.com/docs/functions-and-directives#layer */
@@ -42,17 +15,26 @@
 
 @layer base {
   html {
-    font-family: "neue-haas-unica", sans-serif;
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
   }
 
-  p {
-    font-family: "warnock-pro", serif;
+  .prose a {
+    color: #6366f1;
+    text-decoration-line: none;
+    transition-duration: .15s;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: ease-in-out;
   }
 
-  .accent-color {}
+  .prose a:focus,
+  .prose a:hover {
+    color: #4f46e5;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+  }
 
-  .accent-bg {}
-
-
-
+  .info {
+    font-family: 'JetBrains Mono';
+  }
 }

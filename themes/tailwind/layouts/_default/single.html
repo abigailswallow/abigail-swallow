@@ -1,10 +1,10 @@
 {{ define "main" }}
 <main
-    class="justify-self-center mx-auto px-6 mb-16 sm:px-4 md:px-0 prose dark:prose-invert prose-zinc lg:prose-lg prose-headings:font-medium">
+    class="justify-self-center mx-auto px-6 mb-16 sm:px-4 md:px-0 prose dark:prose-invert prose-zinc lg:prose-lg prose-h1:font-bold prose-headings:font-semibold prose-p:font-serif prose-p:text-xl prose-p:leading-snug">
 
-    <h1 class="font-medium">{{ .Title }}</h1>
+    <h1>{{ .Title }}</h1>
     {{ .Content }}
-    <p class="text-zinc-400 dark:text-zinc-200 mt-3">Last Updated: {{ .Date.Format "January 2, 2006" }}</p>
+    <p class="text-zinc-400 dark:text-zinc-200 mt-3 font-serif">Last Updated: {{ .Date.Format "January 2, 2006" }}</p>
 
 
 
