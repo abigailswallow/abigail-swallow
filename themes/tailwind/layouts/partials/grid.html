@@ -1,5 +1,7 @@
-<div id="tag-buttons" class="flex justify-center md:text-sm text-xs mb-3 mt-1">
-    <button class="font-mono uppercase bg-indigo-500 hover:bg-indigo-400 text-white dark:text-white mx-1 md:px-3 md:py-1 px-2 py-0.5 md:rounded " aria-label="All">All</button>
+<div id="tag-buttons" class="flex flex-col md:flex-row justify-center items-center md:text-sm text-xs mb-3 mt-1">
+    <button
+        class="font-mono uppercase bg-indigo-500 hover:bg-indigo-400 text-white dark:text-white mx-1 md:px-3 md:py-1 px-2 py-0.5 md:rounded hidden md:block"
+        aria-label="All">All</button>
     {{ $displayedPages := where .Site.RegularPages "Params.unlisted" "!=" "true" }}
     {{ $tags := slice }}
     {{ range $page := $displayedPages }}
@@ -10,11 +12,11 @@
     {{ end }}
     {{ end }}
     {{ range $tag := $tags }}
-    <button class="font-mono uppercase border border-indigo-500 text-zinc-700 dark:text-white hover:bg-indigo-400 mx-1 md:px-3 md:py-1 px-2 py-0.5 md:rounded" aria-label="{{ $tag }}">{{ $tag }}</button>
+    <button
+        class="font-mono uppercase border border-indigo-500 text-zinc-700 dark:text-white hover:bg-indigo-400 md:mx-1 md:px-3 md:py-1 px-2 py-0.5 md:rounded md:max-w-xs hidden md:block"
+        aria-label="{{ $tag }}">{{ $tag }}</button>
     {{ end }}
 </div>
-
-
 
 
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -31,7 +33,9 @@
         <p class="dark:text-zinc-300 text-zinc-800 text-lg mb-2">{{ .Description }}</p>
         <div class="flex flex-wrap tags">
             {{ range .Params.tags }}
-            <a href="/tags/{{ . | urlize }}" data-tag="{{ . }}" class="tag-link font-mono uppercase text-indigo-500 hover:underline  transition ease-in-out duration-150" aria-label="{{ . }}">
+            <a href="/tags/{{ . | urlize }}" data-tag="{{ . }}"
+                class="tag-link font-mono uppercase text-indigo-500 hover:underline  transition ease-in-out duration-150"
+                aria-label="{{ . }}">
                 <span class="text-xs mr-2 mb-2">{{ . }}</span>
             </a>
             {{ end }}
@@ -69,6 +73,7 @@
                     });
                 } else {
                     const tag = button.textContent.trim();
+                    const tagClass = tag.replace(".", "-"); // Replace period with hyphen
 
                     // Hide all posts
                     posts.forEach(function (post) {

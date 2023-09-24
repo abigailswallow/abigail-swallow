@@ -2,7 +2,7 @@
 title: Weather Apps in p5.js
 date: "2023-05-28T00:00:00"
 projectYear: 2023
-tags: [UX-Design, DataViz]
+tags: [UX-Design, DataViz, p5js]
 description: "Creating an abstract weather app using p5.js"
 
 previewImage: "/playground/weather/images/hero.png"

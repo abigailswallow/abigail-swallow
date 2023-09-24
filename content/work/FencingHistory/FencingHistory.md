@@ -2,7 +2,7 @@
 title: The Short History of Women's Fencing
 date: "2023-05-12T00:00:00"
 projectYear: 2023
-tags: ['DataViz', 'UX-Design', 'p5.js']
+tags: ['DataViz', 'UX-Design', 'p5js']
 description: "Exploring the history of women's olympic saber fencing."
 
 timeline: "4 Weeks"
