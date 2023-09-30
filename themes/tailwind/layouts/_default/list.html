@@ -3,7 +3,7 @@
 
 <div class="mx-auto lg:px-8 px-4">
     <hr class="border-1 border-black dark:border-zinc-200 mb-10">
-    <h1 class="text-4xl font-semibold font-mono uppercase tracking-wide mb-2">{{ .Title }}</h1>
+    <h1 class="text-4xl mb-2">{{ .Title }}</h1>
 
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -13,7 +13,7 @@
                 <div class="w-full h-0 aspect-w-4 aspect-h-3">
                     <img src="{{ .Params.previewImage }}" alt="{{ .Title }} hero image" class="object-cover mb-2 ">
                 </div>
-                <h2 class="text-xl font-medium pt-3">{{ .Title }}</h2>
+                <h2 class="text-xl pt-3">{{ .Title }}</h2>
             </a>
             <p class="dark:text-zinc-300 text-zinc-800 text-lg mb-4">{{ .Description }}</p>
             <div class="flex flex-wrap tags">

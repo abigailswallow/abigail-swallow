@@ -15,7 +15,7 @@
 
 @layer base {
   html {
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
   }
 
@@ -37,4 +37,15 @@
   .info {
     font-family: 'JetBrains Mono';
   }
+
+  /* SET DEFAULT TO NO FONT WEIGHT */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  .prose h1, .prose h2, .prose h3, .prose h4,  .prose h5, .prose h6 {
+    font-weight: 400;
+  }
+
+
 }

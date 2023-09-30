@@ -10,15 +10,15 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      xs: '0.686rem',
-      sm: '0.812rem',
+      xs: '0.75rem',
+      sm: '0.75rem',
       base: '1rem',
-      xl: '1.188rem',
-      '2xl': '1.438rem',
-      '3xl': '1.750rem',
-      '4xl': '2.062rem',
-      '5xl': '2.500rem',
-      '6xl': '3rem',
+      xl: '1.15rem',
+      '2xl': '1.3rem',
+      '3xl': '1.5rem',
+      '4xl': '1.75rem',
+      '5xl': '2rem',
+      '6xl': '2.15rem',
     },
     extend: {
       colors: {
@@ -26,7 +26,7 @@ module.exports = {
         accent_dark: '#22BFAC',
       },
       fontFamily: {
-        'sans': ['Archivo', 'ui-sans-serif', 'system-ui'],
+        'sans': ['Inter', 'ui-sans-serif', 'system-ui'],
         'serif': ['utopia-std', 'ui-serif', 'Times'],
         'mono': ['JetBrains Mono', 'SFMono-Regular'],
       },
