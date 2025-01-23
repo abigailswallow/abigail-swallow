@@ -13,3 +13,6 @@ min_version = "0.88.0"
 [author]
 name = "Dirk Olbrich"
 homepage = "https://github.com/dirkolbrich/"
+
+[security]
+  enableInlineShortcodes = true

@@ -1,0 +1,27 @@
+<div id="literal-widget" handle="abigail" status="IS_READING" layout="list"></div>
+<script>
+  (function initializeWidget() {
+    // Check if the literal-widget element exists in the DOM
+    const widgetElement = document.getElementById("literal-widget");
+
+    if (widgetElement) {
+      // Element is found, load the widget script
+      console.log("Initializing Literal widget...");
+
+      const script = document.createElement("script");
+      script.src = "https://literal.club/js/widget.js";
+      script.onload = function () {
+        console.log("Literal widget script loaded successfully.");
+      };
+      script.onerror = function () {
+        console.error("Failed to load the Literal widget script.");
+      };
+      document.body.appendChild(script);
+
+      return; // Stop the initialization process
+    }
+
+    // If the element doesn't exist, keep checking every 500ms
+    setTimeout(initializeWidget, 500);
+  })();
+</script>
