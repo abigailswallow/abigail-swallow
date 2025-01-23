@@ -19,10 +19,10 @@ This is a ["now" page](https://nownownow.com/about) all about things I am curren
 ### Reading
 Currently reading two books, if you want a more recent update on my reading follow me on [literal.club](https://literal.club/abigail). 
 
-<div id="literal-widget" handle="user" status="IS_READING" layout="row"></div>
-<script src="https://literal.club/js/widget.js"></script
+<div id="literal-widget" handle="abigail" status="IS_READING" layout="row"></div>
+<script src="https://literal.club/js/widget.js"></script>
 
-1. [Building](https://www.betterworldbooks.com/product/detail/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen-9780307279187) by Christopher McDougall. This book has been *okay*. I am enjoying the storytelling but could do with a little less preaching about running with no shoes on. 
+1. [Building](https://www.betterworldbooks.com/product/detail/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen-9780307279187) by Christopher McDougall. This book has been *okay*. I am enjoying the storytelling but could do with a little less preaching about running with no shoes on.
 2. [How Data Happened](https://www.betterworldbooks.com/product/detail/how-data-happened-a-history-from-the-age-of-reason-to-the-age-of-algorithms-9781324006732) by Chris Wiggins and Matthew L. Jones. Loving this book though it's pretty dense and taking me forever to get through. Fascinating to understand how data and statistics are relatively new things and shaping our society in ways we don't often realize.
 
 ### Listening
